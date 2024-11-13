@@ -1,0 +1,213 @@
+/* --- start affected by epubFix ---
+Note: repeated instances of "text-align:center;" are normal */
+/* --- end affected by epubFix --- */
+@page {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+body {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 1em;
+}
+.center {
+  text-align: center;
+}
+.txc {
+  display: block;
+  font-size: small;
+  text-align: center;
+  font-weight: normal;
+  text-indent: 0;
+}
+.txc1 {
+  display: block;
+  font-size: small;
+  text-align: left;
+  font-weight: normal;
+  text-indent: 0;
+}
+.ded {
+  display: block;
+  font-size: small;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  font-family: sans-serif;
+  text-indent: 0;
+}
+.cn {
+  display: block;
+  font-size: medium;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  font-family: sans-serif;
+  text-align: center;
+}
+.ct {
+  display: block;
+  font-size: medium;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  font-family: sans-serif;
+  text-align: center;
+}
+.cotx1 {
+  display: block;
+  font-size: small;
+  text-align: justify;
+  text-indent: 0;
+}
+.cotx11 {
+  display: block;
+  font-size: small;
+  text-align: justify;
+  margin-left: 1em;
+  text-indent: 0;
+}
+.tx {
+  display: block;
+  font-size: small;
+  text-align: justify;
+  text-indent: 1em;
+}
+.tx11 {
+  display: block;
+  font-size: small;
+  text-align: justify;
+  margin-left: 1em;
+  text-indent: 1em;
+}
+.tx1 {
+  display: block;
+  font-size: small;
+  text-align: justify;
+  text-indent: 0;
+}
+.ic {
+  display: inline;
+  font-size: x-large;
+  text-align: left;
+  font-family: sans-serif;
+}
+.fmh {
+  display: block;
+  font-size: medium;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-indent: 0;
+}
+.cfmh {
+  display: block;
+  font-size: small;
+  margin-left: 0;
+  text-align: left;
+  font-style: italic;
+  text-indent: 0;
+}
+.ccn {
+  font-size: small;
+  text-align: left;
+  text-indent: 0;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: 0;
+}
+.cbmh {
+  font-size: small;
+  text-align: left;
+  margin-left: 0;
+  text-indent: 0;
+  font-style: italic;
+}
+p.indent {
+  text-indent: 1em;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p.nonindent {
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cbmh1 {
+  font-size: small;
+  text-align: left;
+  margin-left: 0;
+  text-indent: 0;
+  font-style: normal;
+}
+p.center {
+  text-align: center;
+  margin-top: 3em;
+}
+a.hlink {
+  text-decoration: none;
+}
+div.copyright {
+  font-size: small;
+  text-align: center;
+  margin-top: 4em;
+}
+p.crt9 {
+  text-align: center;
+}
+p.center4 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.7em;
+}
+span.large1 {
+  font-size: 1.3em;
+}
+span.large {
+  font-size: large;
+}
+p.center9 {
+  text-align: center;
+  margin-top: 2em;
+}
+h1.chapter8 {
+  font-size: medium;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2em;
+  margin-top: 3em;
+  margin-bottom: 6em;
+  font-family: sans-serif;
+}
+span.dropcaps3line {
+  font-size: 5em;
+  line-height: 0.7;
+  float: left;
+  margin: 0 0.05em 0 0;
+  font-family: sans-serif;
+}
+p.center10 {
+  text-align: center;
+  line-height: 1.9em;
+  margin-top: 0.5em;
+}
+a.pubhlink {
+  color: #4c7aa9;
+}
+h1.otherbooks {
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 1em;
+  margin-top: 4em;
+}
+p.extract {
+  text-align: justify;
+  margin-top: 2em;
+  text-indent: 0;
+}
+span.small0 {
+  font-size: small;
+}
