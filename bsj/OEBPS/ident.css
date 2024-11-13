@@ -1,0 +1,132 @@
+@font-face {
+  font-family: AGaramondPro-Bold;
+  font-weight: bold;
+  src: url(fonts/AGaramondPro-Bold.ttf);
+  }
+@font-face {
+  font-family: AGaramondPro-Italic;
+  font-style: italic;
+  src: url(fonts/AGaramondPro-Italic.ttf);
+  }
+@font-face {
+  font-family: AGaramondPro-Regular;
+  src: url(fonts/AGaramondPro-Regular.ttf);
+  }
+@font-face {
+  font-family: MetaPluMedRom;
+  src: url(fonts/MetaPluMedRom.ttf);
+  }
+@font-face {
+  font-family: AGaramondPro-Semibold;
+  font-weight: bold;
+  src: url(fonts/AGaramondPro-Semibold.ttf);
+  }
+@font-face {
+  font-family: AGaramondPro-SemiboldItalic;
+  font-weight: bold;
+  font-style: italic;
+  src: url(fonts/AGaramondPro-SemiboldItalic.ttf);
+  }
+body {
+  margin: 0% 5% 0% 5%;
+  padding: 0%;
+  font-family: AGaramondPro-Regular, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90%;
+  orphans: 2;
+  widows: 2;
+  -webkit-hyphenate-after: 3;
+  -webkit-hyphenate-before: 3;
+  -webkit-hyphenate-lines: 2;
+  -moz-hyphenate-after: 3;
+  -moz-hyphenate-before: 3;
+  -moz-hyphenate-lines: 2;
+  -ms-hyphenate-after: 3;
+  -ms-hyphenate-before: 3;
+  -ms-hyphenate-lines: 2;
+  -o-hyphenate-after: 3;
+  -o-hyphenate-before: 3;
+  -o-hyphenate-lines: 2;
+  text-rendering: optimizeSpeed;
+}
+p, div {
+  margin: 0%;
+  padding: 0%;
+  text-rendering: optimizeSpeed;
+}
+i {
+  font-family: AGaramondPro-Italic, serif;
+  font-style: italic;
+  text-rendering: optimizeSpeed;
+}
+small {
+  font-size: 77%;
+  text-rendering: optimizeSpeed;
+}
+a {
+  text-decoration: none;
+  text-rendering: optimizeSpeed;
+}
+.ident {
+  text-align: center;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  text-rendering: optimizeSpeed;
+}
+.auteur_ident {
+  font-size: 1.4em;
+  line-height: 120%;
+  margin: 5% 0% 2% 0%;
+  text-rendering: optimizeSpeed;
+}
+.ident_tit {
+  font-size: 2.5em;
+  line-height: 120%;
+  margin: 15% 0% 5% 0%;
+  text-rendering: optimizeSpeed;
+}
+.edit {
+  font-size: 1.4em;
+  line-height: 120%;
+  margin: 40% 0% 0% 0%;
+  text-rendering: optimizeSpeed;
+}
+.info, .copy {
+  font-size: 0.85em;
+  line-height: 140%;
+  margin: 3% 0% 0% 0%;
+  text-rendering: optimizeSpeed;
+}
+.trad {
+  font-size: 1.05em;
+  line-height: 140%;
+  margin: 3% 0% 0% 0%;
+  text-rendering: optimizeSpeed;
+}
+.pagecopyright {
+  padding: 25% 0% 0% 0%;
+  text-rendering: optimizeSpeed;
+}
+.pagetitre {
+  text-rendering: optimizeSpeed;
+}
+.dedicaces {
+  text-rendering: optimizeSpeed;
+}
+.dedi {
+  font-size: 90%;
+  text-align: right;
+  margin-top: 25%;
+  text-indent: 0%;
+  line-height: 140%;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  text-rendering: optimizeSpeed;
+}

@@ -1,0 +1,461 @@
+@font-face {
+    font-family: AGaramondPro-Bold;
+    font-weight: bold;
+    src: url(fonts/AGaramondPro-Bold.ttf)
+    }
+@font-face {
+    font-family: AGaramondPro-Italic;
+    font-style: italic;
+    src: url(fonts/AGaramondPro-Italic.ttf)
+    }
+@font-face {
+    font-family: AGaramondPro-Regular;
+    src: url(fonts/AGaramondPro-Regular.ttf)
+    }
+@font-face {
+    font-family: MetaPluMedRom;
+    src: url(fonts/MetaPluMedRom.ttf)
+    }
+@font-face {
+    font-family: AGaramondPro-Semibold;
+    font-weight: bold;
+    src: url(fonts/AGaramondPro-Semibold.ttf)
+    }
+@font-face {
+    font-family: AGaramondPro-SemiboldItalic;
+    font-weight: bold;
+    font-style: italic;
+    src: url(fonts/AGaramondPro-SemiboldItalic.ttf)
+    }
+.image, .imagelarge {
+    text-align: center;
+    max-width: 100%;
+    padding: 0.5em 0 0.5em 0
+    }
+img.imagelarge {
+    width: 98%
+    }
+img.image {
+    width: 80%
+    }
+body {
+    margin: 0% 2.5% 0% 2.5%;
+    padding: 0%;
+    font-family: AGaramondPro-Regular, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90%;
+    orphans: 2;
+    widows: 2;
+    -webkit-hyphenate-after: 3;
+    -webkit-hyphenate-before: 3;
+    -webkit-hyphenate-lines: 2;
+    -moz-hyphenate-after: 3;
+    -moz-hyphenate-before: 3;
+    -moz-hyphenate-lines: 2;
+    -ms-hyphenate-after: 3;
+    -ms-hyphenate-before: 3;
+    -ms-hyphenate-lines: 2;
+    -o-hyphenate-after: 3;
+    -o-hyphenate-before: 3;
+    -o-hyphenate-lines: 2;
+    text-rendering: optimizeSpeed
+    }
+p, div {
+    margin: 0%;
+    padding: 0%;
+    text-rendering: optimizeSpeed
+    }
+h1, h2, h3 {
+    margin: 0%;
+    padding: 0%;
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeSpeed
+    }
+i {
+    font-family: AGaramondPro-Italic, serif;
+    font-style: italic;
+    text-rendering: optimizeSpeed
+    }
+b {
+    font-family: AGaramondPro-Bold, serif;
+    font-weight: bold;
+    text-rendering: optimizeSpeed
+    }
+.fig b {
+    font-family: AGaramondPro-Semibold, serif;
+    font-weight: bold;
+    text-rendering: optimizeSpeed
+    }
+.int_niv2 b i {
+    font-family: AGaramondPro-SemiboldItalic, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-rendering: optimizeSpeed
+    }
+b i {
+    font-family: AGaramondPro-BoldItalic, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-rendering: optimizeSpeed
+    }
+.r {
+    text-rendering: optimizeSpeed;
+    color: #ad2d22;
+    font-family: MetaPluMedRom, sans-serif
+    }
+sup {
+    line-height: 120%;
+    font-size: 60%;
+    vertical-align: 50%;
+    text-rendering: optimizeSpeed
+    }
+small {
+    font-size: 77%;
+    text-rendering: optimizeSpeed
+    }
+a {
+    text-decoration: none;
+    text-rendering: optimizeSpeed
+    }
+.exergues {
+    margin: 9% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.niv1 .exergues {
+    margin: 3% 0% 3% 0%;
+    text-rendering: optimizeSpeed
+    }
+.exer {
+    font-size: 0.85em;
+    text-align: right;
+    line-height: 140%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    margin: 0% 0% 5% 0%;
+    text-rendering: optimizeSpeed
+    }
+.exer .txt_courant_gauche, .exer .txt_courant_droite {
+    text-indent: 0%;
+    margin: 0% 0% 0% 30%;
+    text-rendering: optimizeSpeed
+    }
+.exer_source {
+    text-indent: 0%;
+    page-break-after: avoid;
+    text-align: right;
+    margin: 1em 0% 0% 30%;
+    text-rendering: optimizeSpeed
+    }
+.chap, .appen, .pre {
+    padding: 25% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.dev, .defnotes {
+    margin: 9% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.pre_tit, .chap_n {
+    font-size: 1.2em;
+    line-height: 120%;
+    text-align: center;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 0% 10% 3% 10%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.pre_stit, .chap_tit, .appen_tit {
+    font-size: 1.5em;
+    line-height: 120%;
+    text-align: center;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 0% 10% 3% 10%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.chap_stit {
+    font-size: 1.2em;
+    line-height: 120%;
+    text-align: center;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 3% 10% 0% 10%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.niv1 {
+    margin: 12% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.niv2 {
+    margin: 8% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.niv5 {
+    margin: 2em 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.int_niv1 {
+    font-size: 1.3em;
+    line-height: 110%;
+    text-align: left;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 0% 15% 4% 0%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.int_niv2 {
+    font-size: 1.15em;
+    font-family: AGaramondPro-Semibold;
+    font-weight: bold;
+    line-height: 110%;
+    text-align: left;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    margin: 0% 15% 3% 0%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.last {
+    text-rendering: optimizeSpeed
+    }
+.sign {
+    margin: 0.5em 0% 0% 0%;
+    text-align: left;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.txt_courant_justif {
+    text-align: justify;
+    text-indent: 5%;
+    line-height: 140%;
+    text-rendering: optimizeSpeed
+    }
+.txt_courant_gauche {
+    text-align: justify;
+    text-indent: 0%;
+    line-height: 140%;
+    text-rendering: optimizeSpeed
+    }
+.tableau .txt_courant_gauche {
+    text-align: left;
+    text-indent: 0%;
+    line-height: 140%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.txt_courant_droite {
+    text-align: right;
+    text-indent: 0%;
+    line-height: 140%;
+    margin: 0% 0% 0% 5%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.txt_courant_centre {
+    text-align: center;
+    text-indent: 0%;
+    line-height: 140%;
+    margin: 0% 5% 0% 5%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.div_biblio .txt_courant_justif {
+    margin-left: 5%;
+    text-indent: -5%;
+    text-rendering: optimizeSpeed
+    }
+.cita .entete {
+    line-height: 120%;
+    text-align: center;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 3% 0% 3% 0%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.cita .txt_courant_gauche, .leg .txt_courant_gauche, .leg .txt_courant_centre, table .txt_courant_gauche, table .txt_courant_droite, table .txt_courant_centre {
+    text-indent: 0%;
+    text-rendering: optimizeSpeed
+    }
+.enc {
+    margin: 5% 0% 5% 0%;
+    font-size: 0.85em;
+    page-break-inside: avoid;
+    text-align: left;
+    text-indent: 0%;
+    line-height: 140%;
+    text-rendering: optimizeSpeed
+    }
+.enc .dev {
+    margin: 0%;
+    text-rendering: optimizeSpeed
+    }
+.sep {
+    margin: 3% 0% 2% 0%;
+    text-align: center;
+    page-break-inside: avoid;
+    text-rendering: optimizeSpeed
+    }
+.tableau {
+    page-break-inside: avoid;
+    text-align: center;
+    text-indent: 0%;
+    line-height: 140%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    margin: 0% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+tr.haute td, td.haute {
+    border-top: 1px solid
+    }
+tr.bas td, td.bas {
+    border-bottom: 1px solid
+    }
+table {
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    text-rendering: optimizeSpeed
+    }
+td {
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeSpeed;
+    vertical-align: bottom
+    }
+.table-align {
+    text-align: center;
+    text-indent: 0%;
+    line-height: 140%;
+    margin: 0.5em 0 0.5em 0;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+tbody {
+    vertical-align: middle;
+    text-rendering: optimizeSpeed
+    }
+.fig {
+    margin: 8% 0% 8% 0%;
+    text-align: center;
+    font-size: 0.85em;
+    text-indent: 0%;
+    line-height: 140%;
+    page-break-inside: avoid;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+    text-rendering: optimizeSpeed
+    }
+.fig .txt_courant_centre, .enc .txt_courant_centre {
+    font-size: 115%
+    }
+.leg {
+    margin: 1% 0% 0% 0%;
+    text-rendering: optimizeSpeed
+    }
+.ntb {
+    margin: 1% 0% 0% 0%;
+    font-size: 0.85em;
+    line-height: 130%;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 0%;
+    text-rendering: optimizeSpeed
+    }
+.txt_justif {
+    text-align: justify;
+    text-indent: 5%;
+    text-rendering: optimizeSpeed
+    }
+.apnb {
+    margin: 0 0 0 0.2em;
+    line-height: 120%;
+    font-size: 70%;
+    vertical-align: text-top;
+    text-rendering: optimizeSpeed
+    }
+.chap_debut, .div_autre, .div_biblio, .div_remer, .mailto, .url {
+    text-rendering: optimizeSpeed
+    }
+.cita {
+    margin: 1.5em 0 1.5em 10%;
+    text-rendering: optimizeSpeed
+    }
+.p85 {
+    font-size: 0.85em
+    }
+.url {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto
+    }
+#tab00xv {
+    margin-left: 5%
+    }

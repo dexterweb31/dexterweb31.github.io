@@ -1,0 +1,86 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="ean" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Bullshit Jobs</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Graeber, David">Graeber, David</dc:creator>
+    <dc:publisher>Liens qui libèrent</dc:publisher>
+    <dc:identifier id="ean" opf:scheme="EAN"/>
+    <dc:date>2018-09-03T22:00:00+00:00</dc:date>
+    <dc:rights>© Les Liens qui Libèrent pour la traduction française, 2018</dc:rights>
+    <dc:description>&lt;div&gt;&lt;p&gt;Alors que le progrès technologique a toujours été vu comme l'horizon d'une libération du travail, notre société moderne repose en grande partie sur l'aliénation de la majorité des employés de bureau. Beaucoup sont amenés à dédier leur vie à des tâches inutiles, sans réel intérêt et vides de sens, tout en ayant pleinement conscience de la superficialité de leur contribution à la société. C'est de ce paradoxe qu'est né et s'est répandu, sous la plume de David Graeber, le concept de &lt;/p&gt;&lt;p&gt;Alors que le progrès technologique a toujours été vu comme l'horizon d'une libération du travail, notre société moderne repose en grande partie sur l'aliénation de la majorité des employés de bureau. Beaucoup sont amenés à dédier leur vie à des tâches inutiles, sans réel intérêt et vides de sens, tout en ayant pleinement conscience de la superficialité de leur contribution à la société. C'est de ce paradoxe qu'est né et s'est répandu, sous la plume de David Graeber, le concept de "bullshit jobs" - ou "jobs à la con", comme on les appelle en français. Dans son style unique, virulent et limpide, l'auteur procède ici à un examen poussé de ce phénomène. Il soutient que, lorsque 1 % de la population contrôle la majeure partie des richesses d'une société, ce sont eux qui définissent les tâches "utiles" et "importantes". Mais que penser d'une société qui, d'une part, méprise et sous-paie ses infirmières, chauffeurs de bus, jardiniers ou musiciens - autant de professions authentiquement créatrices de valeur - et, d'autre part, entretient toute une classe d'avocats d'affaires, d'actuaires, de managers intermédiaires et autres gratte-papier surpayés pour accomplir des tâches inutiles, voire nuisibles ? Graeber s'appuie sur les réflexions de grands penseurs, philosophes et scientifiques pour déterminer l'origine de cette anomalie, tant économique que sociale, et en détailler les conséquences individuelles et politiques : la dépression, l'anxiété et les relations de travail sadomasochistes se répandent ; l'effondrement de l'estime de soi s'apparente à "une cicatrice qui balafre notre âme collective". Sa démonstration est émaillée de témoignages éclairants envoyés par des salariés de tous pays, récits tour à tour déchirants, consternants ou hilarants. Il y a le consultant en informatique qui ne possède aucune des qualifications requises pour le poste, mais qui reçoit promotion sur promotion, bien qu'il fasse des pieds et des mains pour se faire virer ; le salarié supervisé par vingt-cinq managers intermédiaires dont pas un seul ne répond à ses requêtes ; le sous-sous-sous-contractant de l'armée allemande qui parcourt chaque semaine 500 kilomètres en voiture pour aller signer un papier qui autorisera un soldat à déplacer son ordinateur dans la pièce d'à côté... Graeber en appelle finalement à une révolte du salarié moderne ainsi qu'à une vaste réorganisation des valeurs, qui placerait le travail créatif et aidant au coeur de notre culture et ferait de la technologie un outil de libération plutôt que d'asservissement, assouvissant enfin notre soif de sens et d'épanouissement. &lt;/p&gt;&lt;h3&gt;Biographie de l'auteur&lt;/h3&gt;&lt;p class="description"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;David Graeber est docteur en anthropologie, économiste et professeur à la London School of Economics. C'est un des intellectuels les plus en vue du moment et les plus ancrés dans les redites socio-économiques. Il est notamment l'auteur de Dette : 5000 ans d'histoire aux éditions LLL. &lt;/p&gt;&lt;/div&gt;</dc:description>
+    <dc:contributor opf:role="bkp">calibre (3.33.1) [https://calibre-ebook.com]</dc:contributor>
+    <dc:language>fr</dc:language>
+    <dc:identifier opf:scheme="calibre">a7deb0c8-6582-4698-bf41-bf0e7c660020</dc:identifier>
+    <meta name="cover" content="cover-image"/>
+    <meta name="calibre:title_sort" content="Bullshit Jobs"/>
+    <meta name="calibre:author_link_map" content="{&quot;Graeber, David&quot;: &quot;&quot;}"/>
+    <meta name="calibre:user_metadata:#formats" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;label&quot;: &quot;formats&quot;, &quot;display&quot;: {&quot;use_decorations&quot;: 0, &quot;composite_sort&quot;: &quot;text&quot;, &quot;composite_template&quot;: &quot;{:'approximate_formats()'}&quot;, &quot;make_category&quot;: false, &quot;description&quot;: &quot;&quot;, &quot;contains_html&quot;: false}, &quot;datatype&quot;: &quot;composite&quot;, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;table&quot;: &quot;custom_column_2&quot;, &quot;colnum&quot;: 2, &quot;name&quot;: &quot;Formats&quot;, &quot;kind&quot;: &quot;field&quot;, &quot;is_csp&quot;: false, &quot;#value#&quot;: &quot;EPUB&quot;, &quot;#extra#&quot;: null, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 22, &quot;search_terms&quot;: [&quot;#formats&quot;], &quot;category_sort&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;is_editable&quot;: true, &quot;is_multiple2&quot;: {}}"/>
+    <meta name="calibre:user_metadata:#lu" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;label&quot;: &quot;lu&quot;, &quot;display&quot;: {}, &quot;datatype&quot;: &quot;bool&quot;, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;colnum&quot;: 1, &quot;name&quot;: &quot;Lu&quot;, &quot;kind&quot;: &quot;field&quot;, &quot;is_csp&quot;: false, &quot;#value#&quot;: null, &quot;#extra#&quot;: null, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 23, &quot;search_terms&quot;: [&quot;#lu&quot;], &quot;category_sort&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;is_editable&quot;: true, &quot;is_multiple2&quot;: {}}"/>
+  </metadata>
+  <manifest>
+    <item href="cover.html" id="html-cover-page" media-type="application/xhtml+xml"/>
+    <item href="PL13.xhtml" id="ixPL13" media-type="application/xhtml+xml"/>
+    <item href="PL12.xhtml" id="ixPL12" media-type="application/xhtml+xml"/>
+    <item href="PL14.xhtml" id="ixPL14" media-type="application/xhtml+xml"/>
+    <item href="PL3.xhtml" id="ixPL3" media-type="application/xhtml+xml"/>
+    <item href="PL4.xhtml" id="ixPL4" media-type="application/xhtml+xml"/>
+    <item href="PL5.xhtml" id="ixPL5" media-type="application/xhtml+xml"/>
+    <item href="PL6.xhtml" id="ixPL6" media-type="application/xhtml+xml"/>
+    <item href="PL7.xhtml" id="ixPL7" media-type="application/xhtml+xml"/>
+    <item href="PL9.xhtml" id="ixPL9" media-type="application/xhtml+xml"/>
+    <item href="PL8.xhtml" id="ixPL8" media-type="application/xhtml+xml"/>
+    <item href="PL10.xhtml" id="ixPL10" media-type="application/xhtml+xml"/>
+    <item href="PL0.xhtml" id="ixPL0" media-type="application/xhtml+xml"/>
+    <item href="PL1.xhtml" id="ixPL1" media-type="application/xhtml+xml"/>
+    <item href="PL11.xhtml" id="ixPL11" media-type="application/xhtml+xml"/>
+    <item href="PL2.xhtml" id="ixPL2" media-type="application/xhtml+xml"/>
+    <item href="fin_acheve.html" id="fin" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="couverture.css" id="couverture_css" media-type="text/css"/>
+    <item href="ident.css" id="ident_css" media-type="text/css"/>
+    <item href="styles-lg.css" id="styles_lg_css" media-type="text/css"/>
+    <item href="cover/cover.jpg" id="cover-image" media-type="image/jpeg"/>
+    <item href="images/BJ-fig1.jpg" id="IMGLG0" media-type="image/jpeg"/>
+    <item href="images/cnl.jpg" id="cnl" media-type="image/jpeg"/>
+    <item href="images/fig-8-1.jpg" id="IMGLG5" media-type="image/jpeg"/>
+    <item href="images/fig-8-2.jpg" id="IMGLG6" media-type="image/jpeg"/>
+    <item href="images/fig-8-3.jpg" id="IMGLG7" media-type="image/jpeg"/>
+    <item href="images/fig-8-4.jpg" id="IMGLG8" media-type="image/jpeg"/>
+    <item href="images/fig2.jpg" id="IMGLG1" media-type="image/jpeg"/>
+    <item href="images/fig3.jpg" id="IMGLG2" media-type="image/jpeg"/>
+    <item href="images/fig4.jpg" id="IMGLG3" media-type="image/jpeg"/>
+    <item href="images/fig7.jpg" id="IMGLG4" media-type="image/jpeg"/>
+    <item href="fonts/AGaramondPro-Bold.ttf" id="font_0" media-type="application/font-tdpfr"/>
+    <item href="fonts/AGaramondPro-Italic.ttf" id="font_2" media-type="application/font-tdpfr"/>
+    <item href="fonts/AGaramondPro-Regular.ttf" id="font_3" media-type="application/font-tdpfr"/>
+    <item href="fonts/AGaramondPro-Semibold.ttf" id="font_4" media-type="application/font-tdpfr"/>
+    <item href="fonts/AGaramondPro-SemiboldItalic.ttf" id="font_5" media-type="application/font-tdpfr"/>
+    <item href="fonts/MetaPluMedRom.ttf" id="font_6" media-type="application/font-tdpfr"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="html-cover-page"/>
+    <itemref idref="ixPL13"/>
+    <itemref idref="ixPL12"/>
+    <itemref idref="ixPL14"/>
+    <itemref idref="ixPL3"/>
+    <itemref idref="ixPL4"/>
+    <itemref idref="ixPL5"/>
+    <itemref idref="ixPL6"/>
+    <itemref idref="ixPL7"/>
+    <itemref idref="ixPL9"/>
+    <itemref idref="ixPL8"/>
+    <itemref idref="ixPL10"/>
+    <itemref idref="ixPL0"/>
+    <itemref idref="ixPL1"/>
+    <itemref idref="ixPL11"/>
+    <itemref idref="ixPL2"/>
+    <itemref idref="fin"/>
+  </spine>
+  <guide>
+    <reference href="cover.html" title="Couverture" type="cover"/>
+  </guide>
+</package>
