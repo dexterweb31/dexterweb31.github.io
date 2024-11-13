@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+	<head>
+		<meta content="9780385515801" name="dtb:uid"/>
+		<meta content="NCXGEN" name="dtb:generator"/>
+		<meta content="0" name="dtb:totalPageCount"/>
+		<meta content="0" name="dtb:maxPageNumber"/>
+		<meta content="0" name="dtb:depth"/>
+	</head>
+	<docTitle><text>Dearly Devoted Dexter</text></docTitle>
+	<docAuthor><text>Jeff Lindsay</text></docAuthor>
+	<navMap>
+		<navPoint id="navPoint1">
+			<navLabel><text>COVER</text></navLabel>
+			<content src="xhtml/titlepage.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint2">
+			<navLabel><text>BOOKS BY JEFF LINDSAY</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_adc_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint3">
+			<navLabel><text>TITLE PAGE</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_tp_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint4">
+			<navLabel><text>COPYRIGHT</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_cop_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint5">
+			<navLabel><text>CONTENTS</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_toc_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint6">
+			<navLabel><text>DEDICATION</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_ded_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint7">
+			<navLabel><text>ACKNOWLEDGMENTS</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_ack_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint8">
+			<navLabel><text>CHAPTER 1</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c01_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint9">
+			<navLabel><text>CHAPTER 2</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c02_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint10">
+			<navLabel><text>CHAPTER 3</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c03_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint11">
+			<navLabel><text>CHAPTER 4</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c04_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint12">
+			<navLabel><text>CHAPTER 5</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c05_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint13">
+			<navLabel><text>CHAPTER 6</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c06_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint14">
+			<navLabel><text>CHAPTER 7</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c07_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint15">
+			<navLabel><text>CHAPTER 8</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c08_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint16">
+			<navLabel><text>CHAPTER 9</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c09_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint17">
+			<navLabel><text>CHAPTER 10</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c10_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint18">
+			<navLabel><text>CHAPTER 11</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c11_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint19">
+			<navLabel><text>CHAPTER 12</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c12_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint20">
+			<navLabel><text>CHAPTER 13</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c13_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint21">
+			<navLabel><text>CHAPTER 14</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c14_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint22">
+			<navLabel><text>CHAPTER 15</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c15_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint23">
+			<navLabel><text>CHAPTER 16</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c16_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint24">
+			<navLabel><text>CHAPTER 17</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c17_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint25">
+			<navLabel><text>CHAPTER 18</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c18_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint26">
+			<navLabel><text>CHAPTER 19</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c19_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint27">
+			<navLabel><text>CHAPTER 20</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c20_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint28">
+			<navLabel><text>CHAPTER 21</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c21_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint29">
+			<navLabel><text>CHAPTER 22</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c22_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint30">
+			<navLabel><text>CHAPTER 23</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c23_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint31">
+			<navLabel><text>CHAPTER 24</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c24_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint32">
+			<navLabel><text>CHAPTER 25</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c25_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint33">
+			<navLabel><text>CHAPTER 26</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c26_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint34">
+			<navLabel><text>CHAPTER 27</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c27_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint35">
+			<navLabel><text>CHAPTER 28</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c28_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint36">
+			<navLabel><text>CHAPTER 29</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_c29_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint37">
+			<navLabel><text>EPILOGUE</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_epl_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint38">
+			<navLabel><text>ABOUT THE AUTHOR</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_ata_r1.xhtml"/>
+		</navPoint>
+		<navPoint id="navPoint39">
+			<navLabel><text>EXCERPT FROM DEXTER IN THE DARK</text></navLabel>
+			<content src="xhtml/Lind_9780385515801_epub_bm1_r1.xhtml"/>
+		</navPoint>
+	</navMap>
+</ncx>
