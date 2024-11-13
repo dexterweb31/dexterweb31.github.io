@@ -1,0 +1,183 @@
+<package xmlns="http://www.idpf.org/2007/opf" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ calibre: https://calibre-ebook.com" unique-identifier="EbookISBN" version="3.0" xml:lang="en-US">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title id="maintitle">Darkly Dreaming Dexter</dc:title>
+    <dc:creator id="id">Jeff Lindsay</dc:creator>
+    <dc:source id="SourceISBN">9781400095919</dc:source>
+    <dc:format>ePub</dc:format>
+    <dc:identifier>isbn:9780307275103</dc:identifier>
+    <dc:identifier>amazon:B000FCK8ZK</dc:identifier>
+    <dc:identifier>odid:69124@melsa.overdrive.com</dc:identifier>
+    <dc:identifier>calibre:8472</dc:identifier>
+    <dc:identifier>uuid:ac8140b3-178b-45c8-b415-1c9e729646a6</dc:identifier>
+    <dc:identifier id="EbookISBN">9780307275103</dc:identifier>
+    <dc:rights>Copyright © 2004 by Jeff Lindsay</dc:rights>
+    <dc:language>en-US</dc:language>
+    <dc:contributor id="id-2">calibre (7.9.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>2005-06-28T00:00:00+00:00</dc:date>
+    <dc:description>&lt;b&gt;Meet Dexter Morgan, a polite wolf in sheep&amp;rsquo;s clothing. He&amp;rsquo;s handsome and charming, but something in his past has made him abide by a different set of rules. He&amp;rsquo;s a serial killer whose one golden rule makes him immensely likeable: he only kills bad people. &lt;b&gt;&amp;bull;&lt;/b&gt; The Killer Character That Inspired the Hit Showtime Series &lt;i&gt;Dexter&lt;/i&gt;&lt;br&gt;&lt;/b&gt;And his job as a blood splatter expert for the Miami police department puts him in the perfect position to identify his victims. But when a series of brutal murders bearing a striking similarity to his own style start turning up, Dexter is caught between being flattered and being frightened&amp;ndash;of himself or some other fiend.</dc:description>
+    <dc:publisher>Knopf Doubleday Publishing Group</dc:publisher>
+    <opf:meta refines="#maintitle" property="title-type">main</opf:meta>
+    <opf:meta refines="#maintitle" property="file-as">Darkly Dreaming Dexter</opf:meta>
+    <!--<sname>Lindsay</sname>-->
+    <meta content="Vintage Crime/Black Lizard" name="imprint"/>
+    <meta property="dcterms:modified">2024-01-07T20:42:46Z</meta>
+    <!--<print-isbn>9780307275103</print-isbn>-->
+    <meta content="4.0.1" name="epubcheckversion"/>
+    <meta content="2017-03-03" name="epubcheckdate"/>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityFeature">bookmarks</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessibilitySummary">Accessibility metadata derived programmatically based on file type.</meta>
+    <meta content="2005-06-28T00:00:00Z" name="created"/>
+    <meta content="1.8" name="backlist_updater_version"/>
+    <meta content="2021-10-08T09:07:28Z" name="backlist_updater_date"/>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta content="1.10" name="EPUB_Scrub_version"/>
+    <meta content="2022-01-28T14:11:48Z" name="EPUB_Scrub_date"/>
+    <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2024-01-07T20:36:43Z</meta>
+    <opf:meta refines="#id-2" property="role" scheme="marc:relators">bkp</opf:meta>
+    <opf:meta refines="#id" property="role" scheme="marc:relators">aut</opf:meta>
+    <opf:meta refines="#id" property="file-as">Lindsay, Jeff</opf:meta>
+    <opf:meta property="belongs-to-collection" id="id-1">Dexter</opf:meta>
+    <opf:meta refines="#id-1" property="collection-type">series</opf:meta>
+    <opf:meta refines="#id-1" property="group-position">1</opf:meta>
+    <opf:meta property="calibre:user_metadata">{
+  "#status": {
+    "#extra#": null,
+    "#value#": null,
+    "category_sort": "value",
+    "colnum": 2,
+    "column": "value",
+    "datatype": "enumeration",
+    "display": {
+      "description": "Status",
+      "enum_colors": [],
+      "enum_values": [
+        "Read",
+        "Read and Loved",
+        "Want to Read"
+      ],
+      "use_decorations": false
+    },
+    "is_category": true,
+    "is_csp": false,
+    "is_custom": true,
+    "is_editable": true,
+    "is_multiple": null,
+    "is_multiple2": {},
+    "kind": "field",
+    "label": "status",
+    "link_column": "value",
+    "name": "Status",
+    "rec_index": 22,
+    "search_terms": [
+      "#status"
+    ],
+    "table": "custom_column_2"
+  }
+}</opf:meta>
+  </metadata>
+  <manifest>
+    <item id="titlepage" href="xhtml/titlepage.xhtml" media-type="application/xhtml+xml" properties="calibre:title-page svg"/>
+    <item href="xhtml/Lind_9780307275103_epub_adc_r1.xhtml" id="adc" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_tp_r1.xhtml" id="tp" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_cop_r1.xhtml" id="cop" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_toc_r1.xhtml" id="toc" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_ded_r1.xhtml" id="ded" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_ack_r1.xhtml" id="ack" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c01_r1.xhtml" id="c01" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c02_r1.xhtml" id="c02" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c03_r1.xhtml" id="c03" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c04_r1.xhtml" id="c04" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c05_r1.xhtml" id="c05" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c06_r1.xhtml" id="c06" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c07_r1.xhtml" id="c07" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c08_r1.xhtml" id="c08" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c09_r1.xhtml" id="c09" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c10_r1.xhtml" id="c10" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c11_r1.xhtml" id="c11" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c12_r1.xhtml" id="c12" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c13_r1.xhtml" id="c13" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c14_r1.xhtml" id="c14" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c15_r1.xhtml" id="c15" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c16_r1.xhtml" id="c16" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c17_r1.xhtml" id="c17" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c18_r1.xhtml" id="c18" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c19_r1.xhtml" id="c19" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c20_r1.xhtml" id="c20" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c21_r1.xhtml" id="c21" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c22_r1.xhtml" id="c22" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c23_r1.xhtml" id="c23" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c24_r1.xhtml" id="c24" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c25_r1.xhtml" id="c25" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c26_r1.xhtml" id="c26" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_c27_r1.xhtml" id="c27" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_bm1_r1.xhtml" id="bm1" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_ata_r1.xhtml" id="ata" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_bm2_r1.xhtml" id="bm2" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_bm3_r1.xhtml" id="bm3" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Lind_9780307275103_epub_bm4_r1.xhtml" id="bm4" media-type="application/xhtml+xml"/>
+    <item href="xhtml/next-reads.xhtml" id="next-reads.xhtml" media-type="application/xhtml+xml"/>
+    <item href="9780307275103_nav.xhtml" id="backlist_updater_generated_nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="9780307275103_ncx.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="css/9780307275103_style.css" id="style" media-type="text/css"/>
+    <item href="images/9780307275103_title_page.jpg" id="Lind_9780307275103_epub_001_r1" media-type="image/jpeg"/>
+    <item id="cover" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item href="images/Lind_9780307275103_epub_002_r1.jpg" id="Lind_9780307275103_epub_002_r1" media-type="image/jpeg"/>
+    <item href="images/next-reads_logo.jpg" id="next-reads_logo.jpg" media-type="image/jpeg"/>
+    <item href="fonts/Shift-Bold.otf" id="Shift-Bold.otf" media-type="font/otf"/>
+    <item href="fonts/Shift-BoldItalic.otf" id="Shift-BoldItalic.otf" media-type="font/otf"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="adc"/>
+    <itemref idref="tp"/>
+    <itemref idref="cop"/>
+    <itemref idref="toc"/>
+    <itemref idref="ded"/>
+    <itemref idref="ack"/>
+    <itemref idref="c01"/>
+    <itemref idref="c02"/>
+    <itemref idref="c03"/>
+    <itemref idref="c04"/>
+    <itemref idref="c05"/>
+    <itemref idref="c06"/>
+    <itemref idref="c07"/>
+    <itemref idref="c08"/>
+    <itemref idref="c09"/>
+    <itemref idref="c10"/>
+    <itemref idref="c11"/>
+    <itemref idref="c12"/>
+    <itemref idref="c13"/>
+    <itemref idref="c14"/>
+    <itemref idref="c15"/>
+    <itemref idref="c16"/>
+    <itemref idref="c17"/>
+    <itemref idref="c18"/>
+    <itemref idref="c19"/>
+    <itemref idref="c20"/>
+    <itemref idref="c21"/>
+    <itemref idref="c22"/>
+    <itemref idref="c23"/>
+    <itemref idref="c24"/>
+    <itemref idref="c25"/>
+    <itemref idref="c26"/>
+    <itemref idref="c27"/>
+    <itemref idref="bm1"/>
+    <itemref idref="ata"/>
+    <itemref idref="bm2"/>
+    <itemref idref="bm3"/>
+    <itemref idref="bm4"/>
+    <itemref idref="next-reads.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="xhtml/Lind_9780307275103_epub_toc_r1.xhtml" title="Table of Contents" type="toc"/>
+    <reference href="xhtml/Lind_9780307275103_epub_toc_r1.xhtml" title="Copyright" type="copyright-page"/>
+    <reference href="xhtml/Lind_9780307275103_epub_ded_r1.xhtml" title="Text" type="text"/>
+    <reference href="xhtml/Lind_9780307275103_epub_ded_r1.xhtml" title="Start" type="start"/>
+  </guide>
+</package>
