@@ -1,0 +1,60 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:creator opf:role="aut" opf:file-as="Chang, Jolan">Jolan Chang</dc:creator>
+<dc:identifier id="uuid_id" opf:scheme="uuid">19299458-19a0-478b-aacd-98e5e8d1ee84</dc:identifier>
+    <dc:date opf:event="modification">2014-03-31</dc:date>
+    <dc:date>2006-03-29T21:00:00+00:00</dc:date>
+    <dc:publisher>Yol Yayınları</dc:publisher>
+    <dc:format>Epub</dc:format>
+    <meta content="Taocu Sevişme ve Seks" name="calibre:title_sort"/>
+    <meta content="2014-03-30T08:45:28.758000+00:00" name="calibre:timestamp"/>
+    <meta content="0.7.4" name="Sigil version"/>
+    <meta name="cover" content="cover.jpg"/>
+  <dc:title>Taocu Sevişme ve Seks</dc:title>
+<meta name="calibre:rating" content="8.0"/>
+<dc:subject>Cinsellik</dc:subject>
+<dc:subject>Sağlık</dc:subject>
+<dc:subject>Araştırma</dc:subject>
+<dc:subject>Doğu Felsefesi</dc:subject>
+<dc:description>&lt;p&gt;Taocu Sevişme ve Seks on üçüncü yüzyılda istilacı Moğollar tarafından
+yasaklanmış eski Çin seksbilimiyle ilgili kırık dökük bilgileri bir araştırmacının
+bilimsel bir yöntem ve anlayışla bir araya getirip bütünlüğüne kavuşturma
+çabasıdır. Bu kitabın amacı okuyucuya günümüzün insanının şipşakçı
+sevişme düzeyinin üstüne çıkmayı sağlayacak teknikler öğretmektir. İlk
+kez çağdaş okuyucu bu kitaptan boşalmanın denetimi, sevişme biçimleri,
+cinsel güçsüzlüğün yenilgiye uğratılması, cinsel isteği artırıcı öpüşme, seks
+ve uzun ömürlülük konularını öğrenme fırsatı bulacaktır. Kitabın başında
+İngiltere'nin en başta gelen Çinbilimcisi Joseph Needham'ın önsözü vardır.
+Kitabın sonuna da bu konularda çağdaş bilimin son sözü sayılabilecek
+Masters ve Johnson'un 'İnsanoğlunun Cinsel Yetersizliği' adlı kitabından
+alınan bir bölüm eklenmiştir.&lt;/p&gt;</dc:description>
+<dc:contributor opf:role="bkp">calibre (1.25.0) [http://calibre-ebook.com]</dc:contributor>
+<meta name="calibre:user_categories" content="{}"/>
+<meta name="calibre:author_link_map" content="{&quot;Jolan Chang&quot;: &quot;&quot;}"/>
+<dc:language>tr</dc:language>
+<dc:identifier opf:scheme="calibre">f7f71fee-9b0a-4017-833b-b88153baeadb</dc:identifier>
+<dc:identifier opf:scheme="ISBN">9757569011</dc:identifier>
+</metadata>
+  <manifest>
+    <item href="Text/metin2.htm" id="metin2.htm" media-type="application/xhtml+xml"/>
+    <item href="Styles/page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="Styles/stylesheet.css" id="css" media-type="text/css"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Text/ickapak.htm" id="ickapak.htm" media-type="application/xhtml+xml"/>
+    <item href="Text/icindekiler.htm" id="icindekiler.htm" media-type="application/xhtml+xml"/>
+    <item href="Text/metin.htm" id="metin.htm" media-type="application/xhtml+xml"/>
+    <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="ickapak.htm"/>
+    <itemref idref="icindekiler.htm"/>
+    <itemref idref="metin.htm"/>
+    <itemref idref="metin2.htm"/>
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="Cover" type="cover"/>
+  </guide>
+</package>
