@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Optik Form Cevap Anahtarı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .options {
+            display: flex;
+            gap: 15px;
+        }
+        .question-number {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 20px;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Optik Form</h1>
+        <div id="questions"></div>
+        <button onclick="showAnswers()">Cevapları Göster</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Soruları otomatik oluştur
+        window.onload = function() {
+            const container = document.getElementById('questions');
+            
+            for(let i = 1; i <= 40; i++) {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question';
+                questionDiv.innerHTML = `
+                    <div class="question-number">Soru ${i}</div>
+                    <div class="options">
+                        ${['A','B','C','D','E'].map(opt => `
+                            <label>
+                                <input type="radio" name="q${i}" value="${opt}">
+                                ${opt}
+                            </label>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(questionDiv);
+            }
+        };
+
+        function showAnswers() {
+            let result = "";
+            
+            for(let i = 1; i <= 40; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                result += `${i}-${selected ? selected.value : '-'} `;
+                
+                // Her 5 soruda bir satır başı
+                if(i % 5 === 0) result += "\n";
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>

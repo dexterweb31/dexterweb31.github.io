@@ -1,0 +1,698 @@
+[
+  {
+    "title": "FONKSİYONLAR - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:454df521-4ec6-42d0-bdb6-7f74605774a5_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "13:57"
+  },
+  {
+    "title": "FONKSİYONLAR - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:7e2616cf-37b1-462a-9752-86c28fe8fed5_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "21:48"
+  },
+  {
+    "title": "FONKSİYONLAR - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:ae4ff509-7aae-47d3-bfee-92f7e6a97694_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "13:17"
+  },
+  {
+    "title": "FONKSİYONLAR - DERECE TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:232121bd-55bf-4bb8-9e0f-ac0dc2c1633d_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "14:04"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ DENKLEMLER - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:48c23f27-631a-4a4d-b355-fbead5b65bbd_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "12:56"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ DENKLEMLER - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:06a52ce3-c6db-4aa2-90d6-e1c4fc286ec5_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "22:54"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ DENKLEMLER - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cb2ec039-cf98-4cf4-9e33-a0751cc0771b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "18:33"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ EŞİTSİZLİKLER - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:35ab2748-291c-485c-a2da-cf70ddbdf27f_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:00"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ EŞİTSİZLİKLER - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b3e888ea-e45a-411b-8c2f-faf80e8622ba_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "16:23"
+  },
+  {
+    "title": "I VE II BİLİNMEYENLİ EŞİTSİZLİKLER - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bede4663-6585-47c7-9d14-2e5c88edcd72_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "21:56"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a401c390-f223-4744-8831-e348940227ee_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:49"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 1 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:928c24ea-ffa7-4c65-9df1-a794cc130c94_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:22"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 1 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bfe841b9-aa3e-4fb7-a80c-9ac73ed0da19_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:03"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 1 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5d83e676-f00f-456b-a01e-fb26e2776f29_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:26"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 2 - 1. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5537de70-6ea0-43cf-a551-0415b991cf58_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:07"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 2 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:dd9af522-0ef3-489b-aa45-9b2e0455f1ce_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "07:50"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 2 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:3ae0e037-550b-4cd0-ac65-56d7a6c90261_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:12"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Isındırma Testi 2 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4ccc9076-7f31-452e-a8a1-ce96aecebf9f_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:38"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Testi 1 - 1. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6c143d01-e018-4dfa-9a9d-9296cfb31c5e_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:53"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Testi 1 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d3d8ce50-4076-4406-9dd5-49488cbe49ca_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:34"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Testi 1 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5342a100-fd9c-4747-9d09-5335fb43ed98_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:52"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Denklemler - Derece Testi 1 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:ad99b6d2-20cc-48d2-90d5-2c5e639b9142_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:08"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b7ec46a6-6b44-4eaf-874a-d449938e1e42_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:34"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:2107e927-d23d-43d6-9c2d-d0ecd1fd889b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:25"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 1 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c3a89dae-39dd-4bd0-8f17-0474f0517631_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:16"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 1 - 4 Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b6cc0ff5-da86-425c-8fa4-ba641de0e6c3_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:30"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 2 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:676b14f4-bccf-4d28-8963-b7e08cefd931_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:10"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 2 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9ac815e7-d1a3-4205-8d02-a3ec4c5ab9b3_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:44"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 2 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cc57df99-0903-4840-939c-d57e5af6be8a_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:28"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Isındırma Testi 2 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:deed0da3-ec78-4d4b-9167-0c8b6b9d6cd1_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:51"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b8d62e74-c0b6-4ab6-9bd4-971c6488e970_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:11"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b712d03d-6051-4639-803b-3e454ebb2802_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:59"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Testi 1 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d423a8cb-a223-410f-801b-bbe602547c84_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:50"
+  },
+  {
+    "title": "I ve II Bilinmeyenli Eşitsizlikler - Derece Testi 1 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e45b7a78-b6d6-4e13-aea9-ce10a45bfa18_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:47"
+  },
+  {
+    "title": "II. DERECEDEN DENKLEMLER - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0853ffcb-b20a-4fdc-b300-65fe4c08c72c_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "16:25"
+  },
+  {
+    "title": "II. DERECEDEN DENKLEMLER - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:40d8d379-c966-450e-989e-d1667055e566_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "14:03"
+  },
+  {
+    "title": "II. DERECEDEN DENKLEMLER - DERECE ISINDIRMA TESTİ 3",
+    "stream_url": "https://karinca-video.mncdn.com/smil:8d123c57-365c-4e58-a009-3813b5f1c731_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:22"
+  },
+  {
+    "title": "II. DERECEDEN DENKLEMLER - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a57d04cb-3594-495d-9dbc-f52a97a5b2bf_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "21:16"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f68bd50d-8efd-4b64-9618-4bd3bb131242_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:46"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:7ac15582-f1fa-4f9b-bc88-b87c552c56d3_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:59"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 1 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:18a3a6d9-7531-45c5-b232-8268a20c059b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:16"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 1 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0b3c2c10-c95d-4906-8b54-7239d989fcbb_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:03"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 2 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6143b141-d5cf-4f65-b772-16c7d3f12560_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:38"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 2 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:232ef6a3-7cc2-43de-8278-c4f5da2d8c8f_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:16"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 2 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:fa6196d5-e3e9-498b-b7d9-cf12c5d2a258_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:07"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 2 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a0f2832e-0d53-4eab-91d1-5fa0891260ce_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:49"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 3 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d9b71fef-73a1-4ff8-a208-8a8c93b7b28d_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:41"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 3 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:fb84704e-5d35-42fd-9794-06726d0a1ed4_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:01"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 3 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:69fc7cfa-fecb-4984-b570-00ae0cb67fbd_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:03"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Isındırma Testi 3 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4b0d928d-d85e-4bb2-ab0d-1fa55d40ef08_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:25"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Testi 1 - 1. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9526e3b7-523e-4d71-983b-b6950d4c8003_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:41"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Testi 1 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:862f8667-44c2-48b3-8be8-fe05e842e486_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:44"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Testi 1 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b72bb490-0e6b-43e2-b363-806027a0510b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:50"
+  },
+  {
+    "title": "II. Dereceden Denklemler - Derece Testi 1 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:48b19660-e8f6-49e4-a885-3fdd116d2033_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:52"
+  },
+  {
+    "title": "PARABOL - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bc6ea5e2-4290-4d25-8e6c-2223cbf4c99b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "18:26"
+  },
+  {
+    "title": "PARABOL - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a597fbbe-3f95-4e43-9fb0-96d937f06bf6_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "17:29"
+  },
+  {
+    "title": "PARABOL - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4b479b94-4e97-45de-b0d5-ff23ba545c7c_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "20:21"
+  },
+  {
+    "title": "POLİNOMLAR - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bb771cc3-b221-4bd3-ad7f-c56e47d018ba_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "17:40"
+  },
+  {
+    "title": "POLİNOMLAR - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:8b7e7610-1774-4d64-ad5d-da0efb3405c6_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "17:14"
+  },
+  {
+    "title": "POLİNOMLAR - DERECE ISINDIRMA TESTİ 3",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a5032105-69a3-4f53-ba2c-14c783b5d54c_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "20:01"
+  },
+  {
+    "title": "POLİNOMLAR - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bd6ea6ea-57f7-4f73-beb7-17031643e084_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "23:03"
+  },
+  {
+    "title": "POLİNOMLAR - DERECE TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e74c4106-70ea-4493-bb48-357c12f2ec4b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:25"
+  },
+  {
+    "title": "RASYONEL SAYILAR - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d5f32c2d-f406-4cbc-9400-a438dbd448c7_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "22:50"
+  },
+  {
+    "title": "RASYONEL SAYILAR - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:30bcf1c7-d92a-4d5f-b5b8-578394ca0c63_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "22:55"
+  },
+  {
+    "title": "RASYONEL SAYILAR - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bfee86ce-f444-4c85-aa39-b88ed09e82e7_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "18:58"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:2ecdb6dc-66cd-469b-b4c0-76bbb8d5c7de_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:35"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:73cb305a-f47e-44bd-8beb-f430c37c8ae4_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:12"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 1 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:edbe0371-76d9-4490-a293-1c1852929e8c_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:33"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 1 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:647af1e8-7ebd-4659-9dbf-92b9e877efe4_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:58"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 1 - 5. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:64f0b32a-d618-4b7d-bbb8-518b9fd39366_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:18"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 2 - 1. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:50fbedfa-c14e-4b56-b187-51f7526e5127_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:04"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 2 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:fcd9c56d-e73a-4f1e-8f58-1f0f2189c298_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:46"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 2 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:37393a38-4132-4c75-b931-a0648c81dbfe_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:20"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 2 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f1917f07-9f7f-4962-b4f3-b5f755926d5f_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:22"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Isındırma Testi 2 - 5. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cfbb9cd8-2ea3-4581-a94d-315bbafd0a14_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:14"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Testi 1 - 1. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:103a075b-2162-4a2c-9db0-0b7f7a48ec9e_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:54"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Testi 1 - 2. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:96ac2213-2e58-476a-be37-a22660a10179_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:02"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Testi 1 - 3. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5672a1a0-6719-4be7-82cc-7e57dcb93bc1_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:18"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Testi 1 - 4. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d52d12ba-69ca-4a5f-aed1-d0d146fa230f_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:45"
+  },
+  {
+    "title": "Rasyonel Sayılar - Derece Testi 1 - 5. Soru\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c843b8e9-68b3-435f-9900-b39b0e5792bb_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:50"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE ISINDIRMA TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a175e42b-4fee-4e68-876f-c403aae0237e_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:17"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE ISINDIRMA TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c0380fb3-2253-40db-af26-38a312d395b3_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "10:49"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE ISINDIRMA TESTİ 3",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f65db9de-d3b4-4420-8734-7b94739bc265_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:09"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE ISINDIRMA TESTİ 4",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d34e7a18-5eb8-4e22-95ab-fb6d23bd1ea6_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "13:05"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE TESTİ 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d4408182-028a-40c7-bdec-0daa00559d8d_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "15:53"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE TESTİ 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:05954f1f-245e-4d5a-86f0-92c6da58478d_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "11:30"
+  },
+  {
+    "title": "TEMEL KAVRAMLAR - DERECE TESTİ 3",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9ef81c1f-e86e-4aeb-9b9a-f2c80f68cb2c_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "12:12"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e1431f55-b502-4033-9136-1474888e831b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:41"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:24e5f225-f246-4de9-b797-fffb049fc7e3_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:00"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 1 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:34f0b307-2323-4e0b-b9bd-36b87eaca411_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:10"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 1 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5eab2a51-abe1-4037-9cdb-d5446132c461_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "05:03"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 2 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d834342e-da1a-47bd-84b9-ece3a08f786d_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:05"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 2 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f9112d52-3154-4812-8e9d-6f21e36afd63_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:22"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 2 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:efb9a97b-7817-4522-9018-c77061956083_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:18"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 2 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0ad9b5dd-f2f6-414c-8297-35a1a16daf38_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "01:53"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 3 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4c5fc42a-fa19-4b0a-9e18-3ba41cc51bda_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:34"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 3 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d19cfe05-aa2c-425f-892e-84263376bea2_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "01:57"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 3 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:88d2ecdd-1bb1-420d-ba94-bf29a3c96824_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:44"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 3 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:1779067f-0b40-4e9f-87bd-48e179a86bdf_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:50"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 3 - 5. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c12f856b-291d-4f31-8b7c-ff4ef00b0a8a_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:58"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 4 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:85d06d37-fdce-4768-bd7e-d151bf673c60_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:17"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 4 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:09fbb5f4-bfe0-4593-935f-713e66bbd1b9_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "04:36"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 4 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:1852ed9e-626e-49da-953b-eb7b618be7ad_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:40"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Isındırma Testi 4 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cadcb650-3ad3-489a-a408-f49ea20e78ae_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:22"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 1 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:29c11704-69f4-4019-aa10-0a49be8ce1d9_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:50"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 1 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6e69d905-1675-4e14-8dca-7a4ddc977a3b_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:30"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 1 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0a8a5e55-df47-455a-9c0d-f9b3a947afbe_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:58"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 1 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cda89e66-ffc8-4bf1-a9b5-f1379c8eec0a_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "06:24"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 2 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:738f318e-2f89-43e2-90bd-3de6a4815439_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:39"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 2 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:15cacc22-21be-43c5-98e5-53f010c6ead9_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:10"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 2 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:3b276eb5-7efb-4463-a1f4-9866af416d8e_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:03"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 2 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:69fcd665-4233-49a8-ba0e-80140ca1355a_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:26"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 3 - 1. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:14e540c0-e689-47d3-9090-b0f84c080e89_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:58"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 3 - 2. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:84134871-401c-45e3-a26c-410df3b12346_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "02:14"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 3 - 3. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b9a0bed6-e6ca-4b43-ba97-c0694dc102b2_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:14"
+  },
+  {
+    "title": "Temel Kavramlar - Derece Testi 3 - 4. Soru",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5d17df8b-76f8-4417-b971-8fa814f29605_smil.smil/playlist.m3u8",
+    "instructor_name": "Mahsum Öztürk",
+    "duration": "03:39"
+  }
+]
