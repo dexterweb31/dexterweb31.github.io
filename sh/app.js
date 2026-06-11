@@ -21,6 +21,9 @@ const jsonFiles = [
 
 let player = null;
 let currentHls = null;
+const defaultOptions = {
+  controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   const selectBox = document.getElementById('instructorSelect');
@@ -29,10 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nowPlayingTitle = document.getElementById('nowPlayingTitle');
   const nowPlayingInstructor = document.getElementById('nowPlayingInstructor');
 
-  // Initialize Plyr player
-  player = new Plyr('#player', {
-    controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']
-  });
+  // Initialize default Plyr player
+  player = new Plyr('#player', defaultOptions);
 
   // Populate Select Box
   jsonFiles.forEach(file => {
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const videoElement = document.getElementById('player');
 
-    // HLS.js setup for handling m3u8 streams
+    // HLS.js setup for handling m3u8 streams with quality selection
     if (url.includes('.m3u8')) {
       if (Hls.isSupported()) {
         if (currentHls) {
@@ -112,11 +113,41 @@ document.addEventListener('DOMContentLoaded', () => {
         currentHls = new Hls();
         currentHls.loadSource(url);
         currentHls.attachMedia(videoElement);
-        currentHls.on(Hls.Events.MANIFEST_PARSED, function () {
+        currentHls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          // Map available qualities from HLS manifest
+          const availableQualities = currentHls.levels.map(l => l.height);
+          
+          // Add '0' to represent 'Auto'
+          availableQualities.unshift(0);
+
+          const options = {
+            ...defaultOptions,
+            quality: {
+              default: 0,
+              options: availableQualities,
+              forced: true,
+              onChange: (newQuality) => updateQuality(newQuality),
+            },
+            i18n: {
+              qualityLabel: {
+                0: 'Auto',
+              },
+            }
+          };
+
+          // Re-initialize Plyr to load the new quality options into settings menu
+          if (player) {
+            player.destroy();
+          }
+          player = new Plyr(videoElement, options);
           player.play();
         });
       } else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
         // Native HLS support (Safari)
+        if (player) {
+          player.destroy();
+        }
+        player = new Plyr(videoElement, defaultOptions);
         videoElement.src = url;
         videoElement.addEventListener('loadedmetadata', function () {
           player.play();
@@ -128,6 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentHls.destroy();
         currentHls = null;
       }
+      if (player) {
+        player.destroy();
+      }
+      player = new Plyr(videoElement, defaultOptions);
       player.source = {
         type: 'video',
         sources: [
@@ -138,6 +173,20 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
       };
       player.play();
+    }
+  }
+
+  function updateQuality(newQuality) {
+    if (!currentHls) return;
+    
+    if (newQuality === 0) {
+      currentHls.currentLevel = -1; // -1 means Auto in hls.js
+    } else {
+      currentHls.levels.forEach((level, levelIndex) => {
+        if (level.height === newQuality) {
+          currentHls.currentLevel = levelIndex;
+        }
+      });
     }
   }
 });
