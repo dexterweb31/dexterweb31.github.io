@@ -21,7 +21,7 @@
             min-height: 100vh;
         }
 
-        /* ===== LAYOUT ===== */
+        /* Layout */
         .page-wrapper {
             display: flex;
             flex-direction: column;
@@ -47,7 +47,7 @@
             flex-shrink: 0;
         }
 
-        /* ===== PLYR DARK THEME CUSTOMIZATION ===== */
+        /* Plyr Theme */
         .plyr-container {
             border-radius: 12px;
             overflow: hidden;
@@ -57,13 +57,11 @@
         :root {
             --plyr-color-main: #ff0000;
             --plyr-video-background: #000;
-            --plyr-menu-background: #1a1a1a;
+            --plyr-menu-background: #212121;
             --plyr-menu-color: #f1f1f1;
             --plyr-menu-border-color: rgba(255, 255, 255, 0.08);
-            --plyr-menu-border-shadow-color: rgba(0, 0, 0, 0.6);
             --plyr-badge-background: #ff0000;
             --plyr-badge-text-color: #fff;
-            --plyr-badge-border-radius: 4px;
             --plyr-control-icon-size: 20px;
             --plyr-tooltip-background: rgba(0, 0, 0, 0.85);
             --plyr-tooltip-color: #fff;
@@ -80,16 +78,11 @@
             --plyr-video-controls-background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
         }
 
-        /* Fine-tune Plyr menu styling for dark theme */
         .plyr__menu__container {
             background: #212121 !important;
             border-radius: 12px !important;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6) !important;
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
-        }
-
-        .plyr__menu__container [role=menu] {
-            padding: 4px 0;
         }
 
         .plyr__menu__container .plyr__control {
@@ -100,7 +93,6 @@
         .plyr__menu__container .plyr__control:hover,
         .plyr__menu__container .plyr__control:focus {
             background: rgba(255, 255, 255, 0.1) !important;
-            color: #fff !important;
         }
 
         .plyr__menu__container .plyr__control[aria-checked="true"]::before {
@@ -112,22 +104,16 @@
             font-weight: 600;
         }
 
-        .plyr__menu__container label.plyr__control {
-            padding: 6px 16px;
-        }
-
-        /* Video container rounded corners */
         .plyr--video {
             border-radius: 12px;
             overflow: hidden;
         }
 
-        /* Make plyr controls text consistent */
         .plyr__controls__item.plyr__time {
             font-variant-numeric: tabular-nums;
         }
 
-        /* ===== VIDEO INFO ===== */
+        /* Video Info */
         .video-info {
             padding: 16px 0;
         }
@@ -145,7 +131,7 @@
             margin-top: 6px;
         }
 
-        /* ===== SIDEBAR ===== */
+        /* Sidebar */
         .sidebar-section {
             background: #1a1a1a;
             border-radius: 12px;
@@ -192,7 +178,7 @@
             color: #f1f1f1;
         }
 
-        /* Lesson list */
+        /* Lesson List */
         .lesson-list {
             max-height: calc(100vh - 200px);
             overflow-y: auto;
@@ -277,7 +263,7 @@
             display: none;
         }
 
-        /* Empty state */
+        /* Empty State */
         .empty-state {
             padding: 40px 16px;
             text-align: center;
@@ -292,45 +278,7 @@
             margin-bottom: 12px;
         }
 
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 1024px) {
-            .main-content {
-                flex-direction: column;
-                padding: 12px;
-            }
-
-            .sidebar {
-                width: 100%;
-            }
-
-            .lesson-list {
-                max-height: 400px;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .main-content {
-                padding: 0;
-            }
-
-            .plyr-container {
-                border-radius: 0;
-            }
-
-            .plyr--video {
-                border-radius: 0;
-            }
-
-            .video-info {
-                padding: 12px;
-            }
-
-            .sidebar {
-                padding: 0 8px;
-            }
-        }
-
-        /* ===== DOWNLOAD BUTTON ===== */
+        /* Download Button */
         .lesson-download {
             background: none;
             border: none;
@@ -365,59 +313,10 @@
             fill: #3ea6ff;
         }
 
-        /* Download toast notification */
-        .download-toast {
+        /* Download Modal */
+        .dl-overlay {
             position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%) translateY(80px);
-            background: #323232;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: 'Inter', sans-serif;
-            z-index: 10000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .download-toast.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .download-toast svg {
-            width: 20px;
-            height: 20px;
-            fill: #4caf50;
-            flex-shrink: 0;
-        }
-
-        .download-toast a {
-            color: #3ea6ff;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 4px;
-        }
-
-        .download-toast a:hover {
-            text-decoration: underline;
-        }
-
-        /* Download Modal overlay */
-        .download-modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             background: rgba(0, 0, 0, 0.85);
             display: flex;
             align-items: center;
@@ -427,15 +326,14 @@
             pointer-events: none;
             transition: opacity 0.3s ease;
             backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
         }
 
-        .download-modal-overlay.show {
+        .dl-overlay.show {
             opacity: 1;
             pointer-events: auto;
         }
 
-        .download-modal {
+        .dl-modal {
             background: #1f1f1f;
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
@@ -448,29 +346,29 @@
             transition: transform 0.3s ease;
         }
 
-        .download-modal-overlay.show .download-modal {
+        .dl-overlay.show .dl-modal {
             transform: scale(1);
         }
 
-        .download-modal-title {
+        .dl-title {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 16px;
             color: #fff;
         }
 
-        .download-modal-status {
+        .dl-status {
             font-size: 14px;
             color: #aaa;
             margin-bottom: 20px;
-            height: 40px;
+            min-height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 1.4;
         }
 
-        .download-progress-container {
+        .dl-bar-wrap {
             width: 100%;
             height: 8px;
             background: rgba(255, 255, 255, 0.1);
@@ -479,7 +377,7 @@
             margin-bottom: 24px;
         }
 
-        .download-progress-bar {
+        .dl-bar {
             height: 100%;
             width: 0%;
             background: linear-gradient(90deg, #3ea6ff, #0056b3);
@@ -487,7 +385,7 @@
             transition: width 0.2s ease;
         }
 
-        .download-modal-btn {
+        .dl-cancel {
             background: #272727;
             border: 1px solid rgba(255, 255, 255, 0.15);
             color: #fff;
@@ -495,12 +393,48 @@
             border-radius: 20px;
             font-size: 14px;
             cursor: pointer;
+            font-family: 'Inter', sans-serif;
             transition: background 0.15s, border-color 0.15s;
         }
 
-        .download-modal-btn:hover {
+        .dl-cancel:hover {
             background: #3f3f3f;
             border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-content {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .lesson-list {
+                max-height: 400px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .main-content {
+                padding: 0;
+            }
+
+            .plyr-container,
+            .plyr--video {
+                border-radius: 0;
+            }
+
+            .video-info {
+                padding: 12px;
+            }
+
+            .sidebar {
+                padding: 0 8px;
+            }
         }
     </style>
 </head>
@@ -508,30 +442,25 @@
 <body>
     <div class="page-wrapper">
         <div class="main-content">
-            <!-- Player Section -->
             <div class="player-section">
                 <div class="plyr-container">
-                    <video id="videoPlayer" playsinline></video>
+                    <video id="player" playsinline></video>
                 </div>
-
-                <!-- Video info -->
                 <div class="video-info">
                     <div class="video-title" id="videoTitle">Bir ders seçin</div>
                     <div class="video-meta" id="videoMeta"></div>
                 </div>
             </div>
 
-            <!-- Sidebar -->
             <div class="sidebar">
                 <div class="sidebar-section">
                     <div class="sidebar-header">
                         <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                         </svg>
                         Eğitmen
                     </div>
-                    <select id="instructorSelect" class="instructor-select" onchange="loadLessons()">
+                    <select id="instructorSelect" class="instructor-select">
                         <option value="">Eğitmen seçin...</option>
                     </select>
                 </div>
@@ -539,16 +468,14 @@
                 <div class="sidebar-section">
                     <div class="sidebar-header">
                         <svg viewBox="0 0 24 24">
-                            <path
-                                d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
+                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
                         </svg>
                         Dersler
                     </div>
                     <div class="lesson-list" id="lessonList">
                         <div class="empty-state">
                             <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
+                                <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
                             </svg>
                             <p>Ders listesini görmek için bir eğitmen seçin</p>
                         </div>
@@ -558,625 +485,407 @@
         </div>
     </div>
 
-    <!-- Download Progress Modal -->
-    <div class="download-modal-overlay" id="downloadModal">
-        <div class="download-modal">
-            <div class="download-modal-title" id="downloadModalTitle">Video İndiriliyor</div>
-            <div class="download-progress-container">
-                <div class="download-progress-bar" id="downloadProgressBar"></div>
+    <!-- Download Modal -->
+    <div class="dl-overlay" id="dlOverlay">
+        <div class="dl-modal">
+            <div class="dl-title" id="dlTitle">Video İndiriliyor</div>
+            <div class="dl-bar-wrap">
+                <div class="dl-bar" id="dlBar"></div>
             </div>
-            <div class="download-modal-status" id="downloadModalStatus">Hazırlanıyor...</div>
-            <button class="download-modal-btn" id="cancelDownloadBtn">İptal Et</button>
+            <div class="dl-status" id="dlStatus">Hazırlanıyor...</div>
+            <button class="dl-cancel" id="dlCancel">İptal Et</button>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.min.js"></script>
     <script>
-        // ===== DATA =====
-        const instructors = [
-            'Ahmet_Atilla_Yilmazer.json', 'Ali_Sacan.json', 'All_Star_Ogretmeni.json',
-            'Altug_Gunes.json', 'Baris_Kapan.json', 'Bayram_Meral.json',
-            'Betul_Buyukkalayci.json', 'Burak_Onay.json', 'Busra_Altinok.json',
-            'Celal_Gunduz.json', 'Deniz_Bozkurt.json', 'Deniz_Ongel.json',
-            'Didar_Baskin.json', 'Enes_Avci.json', 'Enise_Ozdemir.json',
-            'Erdal_Aydemir.json', 'Erkan_Ayranci.json', 'Erkan_Tuncer.json',
-            'Eyup_Boncuk.json', 'Fatih_Demirkaya.json', 'Fatih_Vural.json',
-            'Ferda_Kurnaz_Karagoz.json', 'Gorkem_Sahin.json', 'Gri_Koc.json',
-            'Gulhan_Sen.json', 'Hale_Karatas.json', 'Hilmi_Yavuz.json',
-            'Ibrahim_Turker.json', 'Ibrahim_Ulas_Baldemir.json', 'Ilhan_Aslan.json',
-            'Ilyas_Gunes.json', 'Ismail_Kocabas.json', 'Ismail_Tolga_Aktas.json',
-            'Kader_Altinel.json', 'Kadir_Gumus.json', 'Kanan_Kara.json',
-            'Kemal_Coskun.json', 'Kenan_Kara.json', 'Mahsum_Ozturk.json',
-            'Mehmet_Celal_Ozyildiz.json', 'Mehmet_Dural.json', 'Mehmet_Durmus.json',
-            'Mesut_Ugurdogan.json', 'Murat_Namli.json', 'Mustafa_Ozturk.json',
-            'Mustafa_Yagci.json', 'Nagihan_Hoca.json', 'Nurtac_Kozak.json',
-            'Nurten_Aydin.json', 'Oktay_Duran.json', 'Onay_CEPE.json',
-            'Onur_Soguk.json', 'Ozcan_Aykin.json', 'Ozer_Akgumus.json',
-            'Ozlem_Penekli.json', 'Oznur_Saat_Yildirim.json', 'Rabia_Nalan_Cinar.json',
-            'Recep_Ustunel.json', 'Rustu_Bayindir.json', 'Salih_Yildirir.json',
-            'Selim_Yuksel.json', 'Selma_Kalemci.json', 'Semih_Akpinar.json',
-            'Senol_Aydin.json', 'Sercan_Dural.json', 'Sinan_Aydin.json',
-            'Sukru_Akkoyun.json', 'Uzay_Aslanturk.json', 'Veysel_Boynuegri.json',
-            'Yavuz_Tuna.json', 'Yunus_Turan.json'
+        // ==================== CONFIG ====================
+        const INSTRUCTORS = [
+            'Ahmet_Atilla_Yilmazer', 'Ali_Sacan', 'All_Star_Ogretmeni',
+            'Altug_Gunes', 'Baris_Kapan', 'Bayram_Meral',
+            'Betul_Buyukkalayci', 'Burak_Onay', 'Busra_Altinok',
+            'Celal_Gunduz', 'Deniz_Bozkurt', 'Deniz_Ongel',
+            'Didar_Baskin', 'Enes_Avci', 'Enise_Ozdemir',
+            'Erdal_Aydemir', 'Erkan_Ayranci', 'Erkan_Tuncer',
+            'Eyup_Boncuk', 'Fatih_Demirkaya', 'Fatih_Vural',
+            'Ferda_Kurnaz_Karagoz', 'Gorkem_Sahin', 'Gri_Koc',
+            'Gulhan_Sen', 'Hale_Karatas', 'Hilmi_Yavuz',
+            'Ibrahim_Turker', 'Ibrahim_Ulas_Baldemir', 'Ilhan_Aslan',
+            'Ilyas_Gunes', 'Ismail_Kocabas', 'Ismail_Tolga_Aktas',
+            'Kader_Altinel', 'Kadir_Gumus', 'Kanan_Kara',
+            'Kemal_Coskun', 'Kenan_Kara', 'Mahsum_Ozturk',
+            'Mehmet_Celal_Ozyildiz', 'Mehmet_Dural', 'Mehmet_Durmus',
+            'Mesut_Ugurdogan', 'Murat_Namli', 'Mustafa_Ozturk',
+            'Mustafa_Yagci', 'Nagihan_Hoca', 'Nurtac_Kozak',
+            'Nurten_Aydin', 'Oktay_Duran', 'Onay_CEPE',
+            'Onur_Soguk', 'Ozcan_Aykin', 'Ozer_Akgumus',
+            'Ozlem_Penekli', 'Oznur_Saat_Yildirim', 'Rabia_Nalan_Cinar',
+            'Recep_Ustunel', 'Rustu_Bayindir', 'Salih_Yildirir',
+            'Selim_Yuksel', 'Selma_Kalemci', 'Semih_Akpinar',
+            'Senol_Aydin', 'Sercan_Dural', 'Sinan_Aydin',
+            'Sukru_Akkoyun', 'Uzay_Aslanturk', 'Veysel_Boynuegri',
+            'Yavuz_Tuna', 'Yunus_Turan'
         ];
 
-        // ===== STATE =====
-        let currentHls = null;
-        let plyrPlayer = null;
-        let baseStreamUrl = '';
-
-        // ===== ELEMENTS =====
-        const videoEl = document.getElementById('videoPlayer');
-        const videoTitle = document.getElementById('videoTitle');
-        const videoMeta = document.getElementById('videoMeta');
-
-        // ===== PLYR OPTIONS BUILDER =====
-        function buildPlyrOptions(qualityConfig) {
-            const opts = {
-                controls: [
-                    'play-large',
-                    'rewind',
-                    'play',
-                    'fast-forward',
-                    'progress',
-                    'current-time',
-                    'duration',
-                    'mute',
-                    'volume',
-                    'settings',
-                    'download',
-                    'fullscreen'
-                ],
-                settings: ['quality', 'speed'],
-                speed: {
-                    selected: 1,
-                    options: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
-                },
-                tooltips: {
-                    controls: true,
-                    seek: true
-                },
-                keyboard: {
-                    focused: true,
-                    global: true
-                },
-                seekTime: 10,
-                urls: {
-                    download: null
-                },
-                i18n: {
-                    restart: 'Baştan Başlat',
-                    rewind: '{seektime} saniye geri',
-                    play: 'Oynat',
-                    pause: 'Duraklat',
-                    fastForward: '{seektime} saniye ileri',
-                    seek: 'Ara',
-                    seekLabel: '{currentTime} / {duration}',
-                    played: 'Oynatıldı',
-                    buffered: 'Tamponlandı',
-                    currentTime: 'Şu anki zaman',
-                    duration: 'Süre',
-                    volume: 'Ses',
-                    mute: 'Sesi Kapat',
-                    unmute: 'Sesi Aç',
-                    enableCaptions: 'Altyazıları Aç',
-                    disableCaptions: 'Altyazıları Kapat',
-                    download: 'İndir',
-                    enterFullscreen: 'Tam Ekran',
-                    exitFullscreen: 'Tam Ekrandan Çık',
-                    frameTitle: 'Player {title}',
-                    captions: 'Altyazılar',
-                    settings: 'Ayarlar',
-                    menuBack: 'Geri',
-                    speed: 'Hız',
-                    normal: 'Normal',
-                    quality: 'Kalite',
-                    loop: 'Döngü',
-                    start: 'Başlangıç',
-                    end: 'Bitiş',
-                    all: 'Tümü',
-                    reset: 'Sıfırla',
-                    disabled: 'Kapalı',
-                    enabled: 'Açık',
-                    advertisement: 'Reklam',
-                    qualityBadge: {
-                        2160: '4K',
-                        1440: 'HD',
-                        1080: 'HD',
-                        720: 'HD',
-                        576: 'SD',
-                        480: 'SD',
-                    },
-                },
-            };
-
-            if (qualityConfig) {
-                opts.quality = qualityConfig;
-            }
-
-            return opts;
-        }
-
-        // ===== ATTACH DOWNLOAD HANDLER =====
-        function attachDownloadHandler() {
-            if (!plyrPlayer || !plyrPlayer.elements || !plyrPlayer.elements.container) return;
-            const dlBtn = plyrPlayer.elements.container.querySelector('[data-plyr="download"]');
-            if (dlBtn) {
-                dlBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    if (!baseStreamUrl) {
-                        alert('Önce bir ders seçin');
-                        return;
-                    }
-                    const title = videoTitle.textContent || 'video';
-                    downloadVideo(baseStreamUrl, title);
-                });
-            }
-        }
-
-        // ===== INIT =====
-        window.onload = function () {
-            const select = document.getElementById('instructorSelect');
-            instructors.forEach(file => {
-                const option = document.createElement('option');
-                option.value = file;
-                option.textContent = file.replace('.json', '').replaceAll('_', ' ');
-                select.appendChild(option);
-            });
-
-            // Create initial Plyr instance (no video loaded yet)
-            plyrPlayer = new Plyr(videoEl, buildPlyrOptions());
-            attachDownloadHandler();
+        const PLYR_I18N = {
+            restart: 'Baştan Başlat',
+            rewind: '{seektime} saniye geri',
+            play: 'Oynat',
+            pause: 'Duraklat',
+            fastForward: '{seektime} saniye ileri',
+            seek: 'Ara',
+            seekLabel: '{currentTime} / {duration}',
+            played: 'Oynatıldı',
+            buffered: 'Tamponlandı',
+            currentTime: 'Şu anki zaman',
+            duration: 'Süre',
+            volume: 'Ses',
+            mute: 'Sesi Kapat',
+            unmute: 'Sesi Aç',
+            download: 'İndir',
+            enterFullscreen: 'Tam Ekran',
+            exitFullscreen: 'Tam Ekrandan Çık',
+            settings: 'Ayarlar',
+            menuBack: 'Geri',
+            speed: 'Hız',
+            normal: 'Normal',
+            quality: 'Kalite',
+            loop: 'Döngü',
+            start: 'Başlangıç',
+            end: 'Bitiş',
+            all: 'Tümü',
+            reset: 'Sıfırla',
+            disabled: 'Kapalı',
+            enabled: 'Açık',
+            qualityBadge: {
+                2160: '4K',
+                1440: 'HD',
+                1080: 'HD',
+                720: 'HD',
+                576: 'SD',
+                480: 'SD',
+            },
         };
 
-        // ===== FORMAT TIME =====
-        function formatTime(seconds) {
-            if (isNaN(seconds)) return '0:00';
-            const h = Math.floor(seconds / 3600);
-            const m = Math.floor((seconds % 3600) / 60);
-            const s = Math.floor(seconds % 60);
-            if (h > 0) return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-            return `${m}:${s.toString().padStart(2, '0')}`;
+        // ==================== STATE ====================
+        let hls = null;
+        let player = null;
+        let streamUrl = '';
+        let lessons = [];
+        let activeIndex = -1;
+
+        // ==================== DOM ====================
+        const videoEl = document.getElementById('player');
+        const titleEl = document.getElementById('videoTitle');
+        const metaEl = document.getElementById('videoMeta');
+        const selectEl = document.getElementById('instructorSelect');
+        const listEl = document.getElementById('lessonList');
+
+        // ==================== INIT ====================
+        document.addEventListener('DOMContentLoaded', () => {
+            // Populate instructor dropdown
+            INSTRUCTORS.forEach(name => {
+                const opt = document.createElement('option');
+                opt.value = name + '.json';
+                opt.textContent = name.replaceAll('_', ' ');
+                selectEl.appendChild(opt);
+            });
+
+            selectEl.addEventListener('change', loadLessons);
+
+            // Create initial Plyr (no video yet)
+            player = createPlyr();
+        });
+
+        // ==================== PLYR ====================
+        function createPlyr(qualityOpts) {
+            const opts = {
+                controls: [
+                    'play-large', 'rewind', 'play', 'fast-forward',
+                    'progress', 'current-time', 'duration',
+                    'mute', 'volume', 'settings', 'download', 'fullscreen'
+                ],
+                settings: ['quality', 'speed'],
+                speed: { selected: 1, options: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
+                tooltips: { controls: true, seek: true },
+                keyboard: { focused: true, global: true },
+                seekTime: 10,
+                urls: { download: null },
+                i18n: PLYR_I18N,
+            };
+
+            if (qualityOpts) {
+                opts.quality = qualityOpts;
+            }
+
+            const p = new Plyr(videoEl, opts);
+
+            // Override download button → use our download pipeline
+            const container = p.elements.container;
+            const dlBtn = container && container.querySelector('[data-plyr="download"]');
+            if (dlBtn) {
+                dlBtn.addEventListener('click', e => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (!streamUrl) return alert('Önce bir ders seçin');
+                    download(streamUrl, titleEl.textContent || 'video');
+                });
+            }
+
+            return p;
         }
 
-        // ===== LESSONS =====
-        let allLessons = [];
-        let activeLessonIndex = -1;
-
+        // ==================== LESSONS ====================
         async function loadLessons() {
-            const instructorFile = document.getElementById('instructorSelect').value;
-            if (!instructorFile) return;
-            const lessonList = document.getElementById('lessonList');
-            lessonList.innerHTML = '<div class="empty-state"><p>Yükleniyor...</p></div>';
+            if (!selectEl.value) return;
+            listEl.innerHTML = '<div class="empty-state"><p>Yükleniyor...</p></div>';
 
             try {
-                const response = await fetch(instructorFile);
-                allLessons = await response.json();
+                const res = await fetch(selectEl.value);
+                lessons = await res.json();
+                activeIndex = -1;
                 renderLessons();
-            } catch (error) {
-                lessonList.innerHTML = '<div class="empty-state"><p>Ders bilgileri yüklenemedi!</p></div>';
+            } catch {
+                listEl.innerHTML = '<div class="empty-state"><p>Ders bilgileri yüklenemedi!</p></div>';
             }
         }
 
         function renderLessons() {
-            const lessonList = document.getElementById('lessonList');
-            lessonList.innerHTML = '';
-
-            allLessons.forEach((lesson, index) => {
-                const item = document.createElement('div');
-                item.className = 'lesson-item' + (index === activeLessonIndex ? ' active' : '');
-                item.innerHTML = `
-                    <span class="lesson-number">${index + 1}</span>
+            listEl.innerHTML = '';
+            lessons.forEach((lesson, i) => {
+                const el = document.createElement('div');
+                el.className = 'lesson-item' + (i === activeIndex ? ' active' : '');
+                el.innerHTML = `
+                    <span class="lesson-number">${i + 1}</span>
                     <svg class="lesson-playing-icon" viewBox="0 0 24 24" fill="#3ea6ff"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
                     <div class="lesson-details">
                         <div class="lesson-title">${lesson.title}</div>
                         <div class="lesson-meta">${lesson.instructor_name} · ${lesson.duration}</div>
                     </div>
-                    <button class="lesson-download" data-url="${lesson.stream_url}" data-title="${lesson.title.replace(/"/g, '&quot;')}" title="İndir">
+                    <button class="lesson-download" title="İndir">
                         <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
-                    </button>
-                `;
-                item.addEventListener('click', () => {
-                    activeLessonIndex = index;
-                    baseStreamUrl = lesson.stream_url;
-                    videoTitle.textContent = lesson.title;
-                    videoMeta.textContent = `${lesson.instructor_name} · ${lesson.duration}`;
-                    playVideo(lesson.stream_url);
-                    renderLessons();
-                });
-                lessonList.appendChild(item);
+                    </button>`;
 
-                // Download button handler
-                const dlBtn = item.querySelector('.lesson-download');
-                dlBtn.addEventListener('click', (e) => {
+                // Play on click
+                el.addEventListener('click', () => playLesson(i));
+
+                // Download on button click
+                el.querySelector('.lesson-download').addEventListener('click', e => {
                     e.stopPropagation();
-                    downloadVideo(lesson.stream_url, lesson.title);
+                    download(lesson.stream_url, lesson.title);
                 });
+
+                listEl.appendChild(el);
             });
         }
 
-        // ===== HLS PLAYBACK WITH PLYR =====
-        // Feed the MASTER playlist to HLS.js so it can handle all quality levels.
-        // Plyr is destroyed and re-created BEFORE HLS attaches to ensure clean state.
-        function playVideo(masterUrl) {
-            // 1. Destroy previous HLS instance
-            if (currentHls) {
-                currentHls.destroy();
-                currentHls = null;
+        function playLesson(index) {
+            const lesson = lessons[index];
+            activeIndex = index;
+            streamUrl = lesson.stream_url;
+            titleEl.textContent = lesson.title;
+            metaEl.textContent = `${lesson.instructor_name} · ${lesson.duration}`;
+            loadStream(lesson.stream_url);
+            renderLessons();
+        }
+
+        // ==================== HLS ====================
+        function loadStream(url) {
+            // Clean up previous
+            if (hls) { hls.destroy(); hls = null; }
+            if (player) { player.destroy(); player = null; }
+
+            // Get fresh video element ref (Plyr.destroy restores original)
+            const vid = document.getElementById('player');
+
+            if (!Hls.isSupported()) {
+                // Safari native HLS
+                vid.src = url;
+                player = createPlyr();
+                vid.addEventListener('loadedmetadata', () => vid.play().catch(() => {}), { once: true });
+                return;
             }
 
-            // 2. Destroy previous Plyr instance (restores original <video> element)
-            if (plyrPlayer) {
-                plyrPlayer.destroy();
-                plyrPlayer = null;
-            }
+            hls = new Hls({ maxBufferLength: 30, maxMaxBufferLength: 60 });
+            hls.loadSource(url);
 
-            // 3. Get fresh reference to the restored video element
-            const vid = document.getElementById('videoPlayer');
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                // Extract quality levels
+                const heights = [...new Set(hls.levels.map(l => l.height))].sort((a, b) => b - a);
 
-            if (Hls.isSupported()) {
-                const hls = new Hls({
-                    maxBufferLength: 30,
-                    maxMaxBufferLength: 60,
-                });
-                currentHls = hls;
-
-                // 4. Load the MASTER playlist (not a specific chunklist!)
-                //    HLS.js will parse all quality levels from it
-                hls.loadSource(masterUrl);
-
-                hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-                    // 5. Extract available quality levels
-                    const availableQualities = hls.levels.map(l => l.height);
-                    const uniqueQualities = [...new Set(availableQualities)].sort((a, b) => b - a);
-
-                    // 6. Build Plyr quality config that controls HLS.js levels
-                    const qualityConfig = {
-                        default: uniqueQualities[0],
-                        options: uniqueQualities,
-                        forced: true,
-                        onChange: (newQuality) => {
-                            console.log('[Quality] Switching to', newQuality + 'p');
-                            hls.levels.forEach((level, levelIndex) => {
-                                if (level.height === newQuality) {
-                                    hls.currentLevel = levelIndex;
-                                }
-                            });
-                        }
-                    };
-
-                    // 7. Create Plyr with quality options
-                    plyrPlayer = new Plyr(vid, buildPlyrOptions(qualityConfig));
-                    attachDownloadHandler();
-
-                    // 8. Autoplay
-                    vid.play().catch(err => {
-                        console.log('[Plyr] Autoplay blocked:', err.message);
-                    });
-                });
-
-                hls.on(Hls.Events.ERROR, function (event, data) {
-                    if (data.fatal) {
-                        switch (data.type) {
-                            case Hls.ErrorTypes.NETWORK_ERROR:
-                                console.error('HLS network error, trying to recover...');
-                                hls.startLoad();
-                                break;
-                            case Hls.ErrorTypes.MEDIA_ERROR:
-                                console.error('HLS media error, trying to recover...');
-                                hls.recoverMediaError();
-                                break;
-                            default:
-                                console.error('HLS fatal error, cannot recover');
-                                hls.destroy();
-                                break;
-                        }
+                player = createPlyr({
+                    default: heights[0],
+                    options: heights,
+                    forced: true,
+                    onChange: q => {
+                        const idx = hls.levels.findIndex(l => l.height === q);
+                        if (idx !== -1) hls.currentLevel = idx;
                     }
                 });
 
-                // 5. Attach HLS to the video element AFTER setting up events
-                hls.attachMedia(vid);
+                vid.play().catch(() => {});
+            });
 
-            } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari native HLS — no HLS.js needed
-                vid.src = masterUrl;
-                plyrPlayer = new Plyr(vid, buildPlyrOptions());
-                attachDownloadHandler();
-                vid.addEventListener('loadedmetadata', () => {
-                    vid.play().catch(() => { });
-                }, { once: true });
-            }
+            hls.on(Hls.Events.ERROR, (_, data) => {
+                if (!data.fatal) return;
+                if (data.type === Hls.ErrorTypes.NETWORK_ERROR) hls.startLoad();
+                else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError();
+                else hls.destroy();
+            });
+
+            hls.attachMedia(vid);
         }
 
-        // ===== DOWNLOAD =====
-        const downloadModal = document.getElementById('downloadModal');
-        const downloadModalTitle = document.getElementById('downloadModalTitle');
-        const downloadProgressBar = document.getElementById('downloadProgressBar');
-        const downloadModalStatus = document.getElementById('downloadModalStatus');
-        const cancelDownloadBtn = document.getElementById('cancelDownloadBtn');
+        // ==================== DOWNLOAD ====================
+        let downloading = false;
+        let abortCtrl = null;
 
-        let isDownloading = false;
-        let currentDownloadController = null;
-        let ffmpegInstance = null;
-        let ffmpegLoadFailed = false;
+        const dlOverlay = document.getElementById('dlOverlay');
+        const dlTitle = document.getElementById('dlTitle');
+        const dlBar = document.getElementById('dlBar');
+        const dlStatus = document.getElementById('dlStatus');
+        const dlCancel = document.getElementById('dlCancel');
 
-        function updateDownloadStatus(text) {
-            downloadModalStatus.textContent = text;
-        }
-
-        function updateDownloadProgress(pct) {
-            downloadProgressBar.style.width = pct + '%';
-        }
-
-        function showDownloadModal(title) {
-            downloadModalTitle.textContent = title;
-            downloadModal.classList.add('show');
-        }
-
-        function hideDownloadModal() {
-            downloadModal.classList.remove('show');
-            setTimeout(() => {
-                updateDownloadProgress(0);
-                updateDownloadStatus('Hazırlanıyor...');
-            }, 300);
-        }
-
-        async function toBlobURL(url, mimeType) {
-            const resp = await fetch(url);
-            const blob = await resp.blob();
-            return URL.createObjectURL(blob);
-        }
-
-        // Check if SharedArrayBuffer is available (required for FFmpeg WASM)
-        function isSharedArrayBufferAvailable() {
-            try {
-                return typeof SharedArrayBuffer !== 'undefined';
-            } catch (e) {
-                return false;
-            }
-        }
-
-        async function initFFmpeg() {
-            if (ffmpegInstance) return ffmpegInstance;
-            if (ffmpegLoadFailed) return null;
-
-            try {
-                if (typeof FFmpegWASM === 'undefined') {
-                    console.error('[FFmpeg] FFmpegWASM global not found. Library may not have loaded.');
-                    ffmpegLoadFailed = true;
-                    return null;
-                }
-
-                const { FFmpeg } = FFmpegWASM;
-                const ff = new FFmpeg();
-
-                ff.on('log', ({ message }) => {
-                    console.log('[FFmpeg]', message);
-                });
-
-                updateDownloadStatus('WebAssembly modülleri hazırlanıyor (ilk seferde biraz sürebilir)...');
-
-                const baseURL = 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd';
-
-                const coreURL = await toBlobURL(`${baseURL}/ffmpeg-core.js`, 'text/javascript');
-                const wasmURL = await toBlobURL(`${baseURL}/ffmpeg-core.wasm`, 'application/wasm');
-
-                await ff.load({
-                    coreURL,
-                    wasmURL
-                });
-
-                ffmpegInstance = ff;
-                console.log('[FFmpeg] Loaded successfully');
-                return ffmpegInstance;
-            } catch (error) {
-                console.error('[FFmpeg] Load failed:', error);
-                ffmpegLoadFailed = true;
-                return null;
-            }
-        }
-
-        async function startDownloadFlow(url, title) {
-            if (isDownloading) return;
-            isDownloading = true;
-            currentDownloadController = new AbortController();
-
-            showDownloadModal(title);
-            updateDownloadProgress(0);
-
-            try {
-                updateDownloadStatus('Master çalma listesi çözümleniyor...');
-                const mainUrl = url.substring(0, url.lastIndexOf('/') + 1);
-                const response = await fetch(url, { signal: currentDownloadController.signal });
-                const text = await response.text();
-
-                const lines = text.split('\n');
-                const streams = [];
-                lines.forEach((line, index) => {
-                    if (line.includes('RESOLUTION=')) {
-                        const resolution = line.match(/RESOLUTION=(\d+x\d+)/)[1];
-                        const height = parseInt(resolution.split('x')[1]);
-                        const chunk = lines[index + 1].trim();
-                        streams.push({ height, chunk });
-                    }
-                });
-
-                let selectedChunk = 'playlist.m3u8';
-                if (streams.length > 0) {
-                    streams.sort((a, b) => b.height - a.height);
-                    selectedChunk = streams[0].chunk;
-                    updateDownloadStatus(`En yüksek kalite seçildi (${streams[0].height}p)...`);
-                } else if (!text.includes('RESOLUTION=')) {
-                    selectedChunk = url.substring(url.lastIndexOf('/') + 1);
-                }
-
-                const chunklistUrl = mainUrl + selectedChunk;
-
-                updateDownloadStatus('Parça listesi indiriliyor...');
-                const chunklistResponse = await fetch(chunklistUrl, { signal: currentDownloadController.signal });
-                const chunklistText = await chunklistResponse.text();
-                const chunklistLines = chunklistText.split('\n');
-
-                const segments = [];
-                chunklistLines.forEach(line => {
-                    const trimmed = line.trim();
-                    if (trimmed && !trimmed.startsWith('#')) {
-                        segments.push(trimmed);
-                    }
-                });
-
-                if (segments.length === 0) {
-                    throw new Error('Hiç video parçası bulunamadı!');
-                }
-
-                updateDownloadStatus(`Toplam ${segments.length} parça indirilecek. Hazırlanıyor...`);
-
-                const segmentDataList = new Array(segments.length);
-                const concurrency = 5;
-                let downloadedCount = 0;
-
-                const chunkBaseUrl = chunklistUrl.substring(0, chunklistUrl.lastIndexOf('/') + 1);
-
-                const downloadSegment = async (index) => {
-                    const segmentName = segments[index];
-                    const segmentUrl = segmentName.startsWith('http') ? segmentName : chunkBaseUrl + segmentName;
-
-                    let attempts = 3;
-                    while (attempts > 0) {
-                        try {
-                            const res = await fetch(segmentUrl, { signal: currentDownloadController.signal });
-                            if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-                            const buffer = await res.arrayBuffer();
-                            segmentDataList[index] = new Uint8Array(buffer);
-                            break;
-                        } catch (err) {
-                            if (err.name === 'AbortError') throw err;
-                            attempts--;
-                            if (attempts === 0) throw err;
-                            await new Promise(r => setTimeout(r, 1000));
-                        }
-                    }
-
-                    downloadedCount++;
-                    const pct = Math.round((downloadedCount / segments.length) * 80);
-                    updateDownloadProgress(pct);
-                    updateDownloadStatus(`Parçalar indiriliyor: %${Math.round((downloadedCount / segments.length) * 100)} (${downloadedCount}/${segments.length})`);
-                };
-
-                const queue = [...Array(segments.length).keys()];
-                const workers = Array(concurrency).fill(null).map(async () => {
-                    while (queue.length > 0) {
-                        if (currentDownloadController.signal.aborted) break;
-                        const idx = queue.shift();
-                        await downloadSegment(idx);
-                    }
-                });
-
-                await Promise.all(workers);
-                if (currentDownloadController.signal.aborted) throw new DOMException('Aborted', 'AbortError');
-
-                updateDownloadStatus('Parçalar birleştiriliyor...');
-                updateDownloadProgress(85);
-
-                let totalLength = 0;
-                for (let i = 0; i < segmentDataList.length; i++) {
-                    totalLength += segmentDataList[i].length;
-                }
-
-                const concatenated = new Uint8Array(totalLength);
-                let offset = 0;
-                for (let i = 0; i < segmentDataList.length; i++) {
-                    concatenated.set(segmentDataList[i], offset);
-                    offset += segmentDataList[i].length;
-                    segmentDataList[i] = null;
-                }
-
-                // Try FFmpeg conversion, fallback to direct TS download
-                let useFFmpeg = false;
-                if (!ffmpegLoadFailed) {
-                    updateDownloadStatus('FFmpeg başlatılıyor...');
-                    updateDownloadProgress(90);
-                    const ffmpeg = await initFFmpeg();
-                    useFFmpeg = !!ffmpeg;
-                }
-
-                const safeName = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim();
-
-                if (useFFmpeg && ffmpegInstance) {
-                    // FFmpeg available: convert TS → MP4
-                    updateDownloadStatus('Veriler FFmpeg sistemine yazılıyor...');
-                    await ffmpegInstance.writeFile('input.ts', concatenated);
-
-                    updateDownloadStatus('MP4 formatına dönüştürülüyor (çok kısa sürecek)...');
-                    updateDownloadProgress(95);
-
-                    await ffmpegInstance.exec(['-i', 'input.ts', '-c', 'copy', 'output.mp4']);
-
-                    updateDownloadStatus('Dosya hazırlandı, indiriliyor...');
-                    const mp4Data = await ffmpegInstance.readFile('output.mp4');
-                    const mp4Blob = new Blob([mp4Data.buffer], { type: 'video/mp4' });
-
-                    const downloadUrl = URL.createObjectURL(mp4Blob);
-                    const a = document.createElement('a');
-                    a.href = downloadUrl;
-                    a.download = safeName + '.mp4';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(downloadUrl);
-
-                    try {
-                        await ffmpegInstance.deleteFile('input.ts');
-                        await ffmpegInstance.deleteFile('output.mp4');
-                    } catch (e) {
-                        console.error('Temizleme hatası:', e);
-                    }
-                } else {
-                    // Fallback: download as TS (most players can play .ts files)
-                    updateDownloadStatus('MP4 dönüştürme kullanılamıyor, TS olarak indiriliyor...');
-                    updateDownloadProgress(95);
-
-                    const tsBlob = new Blob([concatenated.buffer], { type: 'video/mp2t' });
-                    const downloadUrl = URL.createObjectURL(tsBlob);
-                    const a = document.createElement('a');
-                    a.href = downloadUrl;
-                    a.download = safeName + '.ts';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(downloadUrl);
-                }
-
-                updateDownloadProgress(100);
-                updateDownloadStatus('İndirme tamamlandı!');
-                setTimeout(hideDownloadModal, 2000);
-
-            } catch (error) {
-                if (error.name === 'AbortError') {
-                    updateDownloadStatus('İndirme iptal edildi.');
-                } else {
-                    console.error('İndirme hatası:', error);
-                    updateDownloadStatus(`Hata oluştu: ${error.message || error}`);
-                }
-                setTimeout(hideDownloadModal, 3000);
-            } finally {
-                isDownloading = false;
-                currentDownloadController = null;
-            }
-        }
-
-        cancelDownloadBtn.addEventListener('click', () => {
-            if (currentDownloadController) {
-                currentDownloadController.abort();
-            }
-            hideDownloadModal();
+        dlCancel.addEventListener('click', () => {
+            if (abortCtrl) abortCtrl.abort();
+            hideModal();
         });
 
-        function downloadVideo(url, title) {
-            startDownloadFlow(url, title);
+        function showModal(title) {
+            dlTitle.textContent = title;
+            dlBar.style.width = '0%';
+            dlStatus.textContent = 'Hazırlanıyor...';
+            dlOverlay.classList.add('show');
+        }
+
+        function hideModal() {
+            dlOverlay.classList.remove('show');
+        }
+
+        function setProgress(pct, text) {
+            dlBar.style.width = pct + '%';
+            if (text) dlStatus.textContent = text;
+        }
+
+        async function download(masterUrl, title) {
+            if (downloading) return;
+            downloading = true;
+            abortCtrl = new AbortController();
+            const signal = abortCtrl.signal;
+
+            showModal(title);
+
+            try {
+                // 1. Fetch master playlist
+                setProgress(0, 'Çalma listesi çözümleniyor...');
+                const baseUrl = masterUrl.substring(0, masterUrl.lastIndexOf('/') + 1);
+                const masterText = await (await fetch(masterUrl, { signal })).text();
+
+                // 2. Pick highest quality chunklist
+                const lines = masterText.split('\n');
+                const streams = [];
+                lines.forEach((line, i) => {
+                    if (line.includes('RESOLUTION=')) {
+                        const h = parseInt(line.match(/RESOLUTION=\d+x(\d+)/)[1]);
+                        streams.push({ height: h, chunk: lines[i + 1].trim() });
+                    }
+                });
+
+                let chunkPath;
+                if (streams.length > 0) {
+                    streams.sort((a, b) => b.height - a.height);
+                    chunkPath = streams[0].chunk;
+                    setProgress(5, `En yüksek kalite: ${streams[0].height}p`);
+                } else {
+                    chunkPath = masterUrl.substring(masterUrl.lastIndexOf('/') + 1);
+                }
+
+                // 3. Fetch chunklist
+                const chunkUrl = baseUrl + chunkPath;
+                const chunkBase = chunkUrl.substring(0, chunkUrl.lastIndexOf('/') + 1);
+                const chunkText = await (await fetch(chunkUrl, { signal })).text();
+
+                const segments = chunkText.split('\n')
+                    .map(l => l.trim())
+                    .filter(l => l && !l.startsWith('#'));
+
+                if (!segments.length) throw new Error('Segment bulunamadı');
+
+                // 4. Download all segments in parallel
+                const total = segments.length;
+                const data = new Array(total);
+                let done = 0;
+                const WORKERS = 5;
+
+                const queue = segments.map((_, i) => i);
+
+                async function worker() {
+                    while (queue.length) {
+                        if (signal.aborted) return;
+                        const i = queue.shift();
+                        const url = segments[i].startsWith('http') ? segments[i] : chunkBase + segments[i];
+
+                        for (let attempt = 0; attempt < 3; attempt++) {
+                            try {
+                                const res = await fetch(url, { signal });
+                                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                                data[i] = new Uint8Array(await res.arrayBuffer());
+                                break;
+                            } catch (err) {
+                                if (err.name === 'AbortError') throw err;
+                                if (attempt === 2) throw err;
+                                await new Promise(r => setTimeout(r, 1000));
+                            }
+                        }
+
+                        done++;
+                        const pct = 10 + Math.round((done / total) * 85);
+                        setProgress(pct, `İndiriliyor: ${done}/${total} (%${Math.round(done / total * 100)})`);
+                    }
+                }
+
+                await Promise.all(Array.from({ length: WORKERS }, worker));
+                if (signal.aborted) return;
+
+                // 5. Concatenate & save
+                setProgress(96, 'Dosya oluşturuluyor...');
+
+                let size = 0;
+                for (const d of data) size += d.length;
+
+                const merged = new Uint8Array(size);
+                let offset = 0;
+                for (let i = 0; i < data.length; i++) {
+                    merged.set(data[i], offset);
+                    offset += data[i].length;
+                    data[i] = null; // free memory
+                }
+
+                const blob = new Blob([merged.buffer], { type: 'video/mp2t' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim() + '.ts';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+
+                setProgress(100, 'İndirme tamamlandı!');
+                setTimeout(hideModal, 1500);
+
+            } catch (err) {
+                if (err.name === 'AbortError') {
+                    dlStatus.textContent = 'İptal edildi.';
+                } else {
+                    console.error('Download error:', err);
+                    dlStatus.textContent = `Hata: ${err.message}`;
+                }
+                setTimeout(hideModal, 2500);
+            } finally {
+                downloading = false;
+                abortCtrl = null;
+            }
         }
     </script>
 </body>
