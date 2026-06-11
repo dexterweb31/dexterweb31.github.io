@@ -429,10 +429,12 @@
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
         }
+
         .download-modal-overlay.show {
             opacity: 1;
             pointer-events: auto;
         }
+
         .download-modal {
             background: #1f1f1f;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -440,20 +442,23 @@
             padding: 24px;
             width: 90%;
             max-width: 480px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
             text-align: center;
             transform: scale(0.9);
             transition: transform 0.3s ease;
         }
+
         .download-modal-overlay.show .download-modal {
             transform: scale(1);
         }
+
         .download-modal-title {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 16px;
             color: #fff;
         }
+
         .download-modal-status {
             font-size: 14px;
             color: #aaa;
@@ -464,6 +469,7 @@
             justify-content: center;
             line-height: 1.4;
         }
+
         .download-progress-container {
             width: 100%;
             height: 8px;
@@ -472,6 +478,7 @@
             overflow: hidden;
             margin-bottom: 24px;
         }
+
         .download-progress-bar {
             height: 100%;
             width: 0%;
@@ -479,6 +486,7 @@
             border-radius: 4px;
             transition: width 0.2s ease;
         }
+
         .download-modal-btn {
             background: #272727;
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -489,6 +497,7 @@
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s;
         }
+
         .download-modal-btn:hover {
             background: #3f3f3f;
             border-color: rgba(255, 255, 255, 0.3);
@@ -597,22 +606,15 @@
         let currentHls = null;
         let plyrPlayer = null;
         let baseStreamUrl = '';
-        let qualityOptions = [];
-        let currentQuality = '';
 
         // ===== ELEMENTS =====
-        const video = document.getElementById('videoPlayer');
+        const videoEl = document.getElementById('videoPlayer');
         const videoTitle = document.getElementById('videoTitle');
         const videoMeta = document.getElementById('videoMeta');
 
-        // ===== INIT PLYR =====
-        function initPlyr(qualityConfig) {
-            // Destroy previous Plyr instance
-            if (plyrPlayer) {
-                plyrPlayer.destroy();
-            }
-
-            const plyrOptions = {
+        // ===== PLYR OPTIONS BUILDER =====
+        function buildPlyrOptions(qualityConfig) {
+            const opts = {
                 controls: [
                     'play-large',
                     'rewind',
@@ -641,7 +643,6 @@
                     global: true
                 },
                 seekTime: 10,
-                // Prevent Plyr from setting a direct download link (HLS can't be downloaded directly)
                 urls: {
                     download: null
                 },
@@ -691,19 +692,19 @@
                 },
             };
 
-            // Add quality config if provided
             if (qualityConfig) {
-                plyrOptions.quality = qualityConfig;
+                opts.quality = qualityConfig;
             }
 
-            plyrPlayer = new Plyr(video, plyrOptions);
+            return opts;
+        }
 
-            // Intercept Plyr's download button to use FFmpeg WASM pipeline
-            // Plyr's default download creates an <a> link which won't work for HLS streams
-            const plyrContainer = plyrPlayer.elements.container;
-            const downloadButton = plyrContainer.querySelector('[data-plyr="download"]');
-            if (downloadButton) {
-                downloadButton.addEventListener('click', (e) => {
+        // ===== ATTACH DOWNLOAD HANDLER =====
+        function attachDownloadHandler() {
+            if (!plyrPlayer || !plyrPlayer.elements || !plyrPlayer.elements.container) return;
+            const dlBtn = plyrPlayer.elements.container.querySelector('[data-plyr="download"]');
+            if (dlBtn) {
+                dlBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     if (!baseStreamUrl) {
@@ -714,12 +715,7 @@
                     downloadVideo(baseStreamUrl, title);
                 });
             }
-
-            return plyrPlayer;
         }
-
-        // Initialize Plyr without quality options initially
-        initPlyr();
 
         // ===== INIT =====
         window.onload = function () {
@@ -730,6 +726,10 @@
                 option.textContent = file.replace('.json', '').replaceAll('_', ' ');
                 select.appendChild(option);
             });
+
+            // Create initial Plyr instance (no video loaded yet)
+            plyrPlayer = new Plyr(videoEl, buildPlyrOptions());
+            attachDownloadHandler();
         };
 
         // ===== FORMAT TIME =====
@@ -799,47 +799,23 @@
         }
 
         // ===== HLS PLAYBACK WITH PLYR =====
-        async function parseM3U8(url) {
-            try {
-                const response = await fetch(url);
-                const text = await response.text();
-                const lines = text.split('\n');
-                qualityOptions = [];
-
-                lines.forEach((line, index) => {
-                    if (line.includes('RESOLUTION=')) {
-                        const resolution = line.match(/RESOLUTION=(\d+x\d+)/)[1];
-                        const height = parseInt(resolution.split('x')[1]);
-                        const label = `${height}p`;
-                        const chunk = lines[index + 1].trim();
-                        qualityOptions.push({ label, height, chunk });
-                    }
-                });
-
-                if (qualityOptions.length > 0) {
-                    currentQuality = qualityOptions[0].chunk;
-                }
-
-                return qualityOptions[0]?.chunk;
-            } catch (error) {
-                console.error('M3U8 parse hatası:', error);
-                return url;
-            }
-        }
-
-        async function playVideo(url) {
-            const mainUrl = url.replace('playlist.m3u8', '');
-            const defaultChunk = await parseM3U8(url);
-            const streamUrl = mainUrl + (defaultChunk || 'playlist.m3u8');
-
-            loadHLS(streamUrl);
-        }
-
-        function loadHLS(url, seekTo = 0, autoplay = true) {
+        // Feed the MASTER playlist to HLS.js so it can handle all quality levels.
+        // Plyr is destroyed and re-created BEFORE HLS attaches to ensure clean state.
+        function playVideo(masterUrl) {
+            // 1. Destroy previous HLS instance
             if (currentHls) {
                 currentHls.destroy();
                 currentHls = null;
             }
+
+            // 2. Destroy previous Plyr instance (restores original <video> element)
+            if (plyrPlayer) {
+                plyrPlayer.destroy();
+                plyrPlayer = null;
+            }
+
+            // 3. Get fresh reference to the restored video element
+            const vid = document.getElementById('videoPlayer');
 
             if (Hls.isSupported()) {
                 const hls = new Hls({
@@ -848,21 +824,22 @@
                 });
                 currentHls = hls;
 
-                hls.loadSource(url);
-                hls.attachMedia(video);
+                // 4. Load the MASTER playlist (not a specific chunklist!)
+                //    HLS.js will parse all quality levels from it
+                hls.loadSource(masterUrl);
 
                 hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-                    // Get available quality levels from HLS
+                    // 5. Extract available quality levels
                     const availableQualities = hls.levels.map(l => l.height);
-                    // Remove duplicates and sort descending
                     const uniqueQualities = [...new Set(availableQualities)].sort((a, b) => b - a);
 
-                    // Build quality config for Plyr
+                    // 6. Build Plyr quality config that controls HLS.js levels
                     const qualityConfig = {
                         default: uniqueQualities[0],
                         options: uniqueQualities,
                         forced: true,
                         onChange: (newQuality) => {
+                            console.log('[Quality] Switching to', newQuality + 'p');
                             hls.levels.forEach((level, levelIndex) => {
                                 if (level.height === newQuality) {
                                     hls.currentLevel = levelIndex;
@@ -871,11 +848,14 @@
                         }
                     };
 
-                    // Re-initialize Plyr with quality options
-                    initPlyr(qualityConfig);
+                    // 7. Create Plyr with quality options
+                    plyrPlayer = new Plyr(vid, buildPlyrOptions(qualityConfig));
+                    attachDownloadHandler();
 
-                    if (seekTo) video.currentTime = seekTo;
-                    if (autoplay) video.play();
+                    // 8. Autoplay
+                    vid.play().catch(err => {
+                        console.log('[Plyr] Autoplay blocked:', err.message);
+                    });
                 });
 
                 hls.on(Hls.Events.ERROR, function (event, data) {
@@ -897,15 +877,16 @@
                     }
                 });
 
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari native HLS
-                video.src = url;
-                video.addEventListener('loadedmetadata', () => {
-                    if (!plyrPlayer) {
-                        initPlyr();
-                    }
-                    if (seekTo) video.currentTime = seekTo;
-                    if (autoplay) video.play();
+                // 5. Attach HLS to the video element AFTER setting up events
+                hls.attachMedia(vid);
+
+            } else if (vid.canPlayType('application/vnd.apple.mpegurl')) {
+                // Safari native HLS — no HLS.js needed
+                vid.src = masterUrl;
+                plyrPlayer = new Plyr(vid, buildPlyrOptions());
+                attachDownloadHandler();
+                vid.addEventListener('loadedmetadata', () => {
+                    vid.play().catch(() => { });
                 }, { once: true });
             }
         }
@@ -959,7 +940,7 @@
             });
 
             updateDownloadStatus('WebAssembly modülleri hazırlanıyor (ilk seferde biraz sürebilir)...');
-            
+
             const coreURL = await toBlobURL('https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd/ffmpeg-core.js', 'text/javascript');
             const wasmURL = await toBlobURL('https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd/ffmpeg-core.wasm', 'application/wasm');
 
@@ -984,7 +965,7 @@
                 const mainUrl = url.substring(0, url.lastIndexOf('/') + 1);
                 const response = await fetch(url, { signal: currentDownloadController.signal });
                 const text = await response.text();
-                
+
                 const lines = text.split('\n');
                 const streams = [];
                 lines.forEach((line, index) => {
@@ -1006,7 +987,7 @@
                 }
 
                 const chunklistUrl = mainUrl + selectedChunk;
-                
+
                 updateDownloadStatus('Parça listesi indiriliyor...');
                 const chunklistResponse = await fetch(chunklistUrl, { signal: currentDownloadController.signal });
                 const chunklistText = await chunklistResponse.text();
@@ -1035,7 +1016,7 @@
                 const downloadSegment = async (index) => {
                     const segmentName = segments[index];
                     const segmentUrl = segmentName.startsWith('http') ? segmentName : chunkBaseUrl + segmentName;
-                    
+
                     let attempts = 3;
                     while (attempts > 0) {
                         try {
@@ -1104,7 +1085,7 @@
 
                 const safeName = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim() + '.mp4';
                 const downloadUrl = URL.createObjectURL(mp4Blob);
-                
+
                 const a = document.createElement('a');
                 a.href = downloadUrl;
                 a.download = safeName;
