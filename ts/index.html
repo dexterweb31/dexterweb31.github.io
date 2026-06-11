@@ -572,7 +572,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.min.js"></script>
     <script>
         // ===== DATA =====
         const instructors = [
@@ -901,6 +901,7 @@
         let isDownloading = false;
         let currentDownloadController = null;
         let ffmpegInstance = null;
+        let ffmpegLoadFailed = false;
 
         function updateDownloadStatus(text) {
             downloadModalStatus.textContent = text;
@@ -929,27 +930,53 @@
             return URL.createObjectURL(blob);
         }
 
+        // Check if SharedArrayBuffer is available (required for FFmpeg WASM)
+        function isSharedArrayBufferAvailable() {
+            try {
+                return typeof SharedArrayBuffer !== 'undefined';
+            } catch (e) {
+                return false;
+            }
+        }
+
         async function initFFmpeg() {
             if (ffmpegInstance) return ffmpegInstance;
+            if (ffmpegLoadFailed) return null;
 
-            const { FFmpeg } = FFmpegWASM;
-            ffmpegInstance = new FFmpeg();
+            try {
+                if (typeof FFmpegWASM === 'undefined') {
+                    console.error('[FFmpeg] FFmpegWASM global not found. Library may not have loaded.');
+                    ffmpegLoadFailed = true;
+                    return null;
+                }
 
-            ffmpegInstance.on('log', ({ message }) => {
-                console.log('[FFmpeg]', message);
-            });
+                const { FFmpeg } = FFmpegWASM;
+                const ff = new FFmpeg();
 
-            updateDownloadStatus('WebAssembly modülleri hazırlanıyor (ilk seferde biraz sürebilir)...');
+                ff.on('log', ({ message }) => {
+                    console.log('[FFmpeg]', message);
+                });
 
-            const coreURL = await toBlobURL('https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd/ffmpeg-core.js', 'text/javascript');
-            const wasmURL = await toBlobURL('https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd/ffmpeg-core.wasm', 'application/wasm');
+                updateDownloadStatus('WebAssembly modülleri hazırlanıyor (ilk seferde biraz sürebilir)...');
 
-            await ffmpegInstance.load({
-                coreURL,
-                wasmURL
-            });
+                const baseURL = 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd';
 
-            return ffmpegInstance;
+                const coreURL = await toBlobURL(`${baseURL}/ffmpeg-core.js`, 'text/javascript');
+                const wasmURL = await toBlobURL(`${baseURL}/ffmpeg-core.wasm`, 'application/wasm');
+
+                await ff.load({
+                    coreURL,
+                    wasmURL
+                });
+
+                ffmpegInstance = ff;
+                console.log('[FFmpeg] Loaded successfully');
+                return ffmpegInstance;
+            } catch (error) {
+                console.error('[FFmpeg] Load failed:', error);
+                ffmpegLoadFailed = true;
+                return null;
+            }
         }
 
         async function startDownloadFlow(url, title) {
@@ -1067,38 +1094,60 @@
                     segmentDataList[i] = null;
                 }
 
-                updateDownloadStatus('FFmpeg başlatılıyor...');
-                updateDownloadProgress(90);
-                const ffmpeg = await initFFmpeg();
+                // Try FFmpeg conversion, fallback to direct TS download
+                let useFFmpeg = false;
+                if (!ffmpegLoadFailed) {
+                    updateDownloadStatus('FFmpeg başlatılıyor...');
+                    updateDownloadProgress(90);
+                    const ffmpeg = await initFFmpeg();
+                    useFFmpeg = !!ffmpeg;
+                }
 
-                updateDownloadStatus('Veriler FFmpeg sistemine yazılıyor...');
-                await ffmpeg.writeFile('input.ts', concatenated);
+                const safeName = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim();
 
-                updateDownloadStatus('MP4 formatına dönüştürülüyor (çok kısa sürecek)...');
-                updateDownloadProgress(95);
+                if (useFFmpeg && ffmpegInstance) {
+                    // FFmpeg available: convert TS → MP4
+                    updateDownloadStatus('Veriler FFmpeg sistemine yazılıyor...');
+                    await ffmpegInstance.writeFile('input.ts', concatenated);
 
-                await ffmpeg.exec(['-i', 'input.ts', '-c', 'copy', 'output.mp4']);
+                    updateDownloadStatus('MP4 formatına dönüştürülüyor (çok kısa sürecek)...');
+                    updateDownloadProgress(95);
 
-                updateDownloadStatus('Dosya hazırlandı, indiriliyor...');
-                const mp4Data = await ffmpeg.readFile('output.mp4');
-                const mp4Blob = new Blob([mp4Data.buffer], { type: 'video/mp4' });
+                    await ffmpegInstance.exec(['-i', 'input.ts', '-c', 'copy', 'output.mp4']);
 
-                const safeName = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim() + '.mp4';
-                const downloadUrl = URL.createObjectURL(mp4Blob);
+                    updateDownloadStatus('Dosya hazırlandı, indiriliyor...');
+                    const mp4Data = await ffmpegInstance.readFile('output.mp4');
+                    const mp4Blob = new Blob([mp4Data.buffer], { type: 'video/mp4' });
 
-                const a = document.createElement('a');
-                a.href = downloadUrl;
-                a.download = safeName;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(downloadUrl);
+                    const downloadUrl = URL.createObjectURL(mp4Blob);
+                    const a = document.createElement('a');
+                    a.href = downloadUrl;
+                    a.download = safeName + '.mp4';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(downloadUrl);
 
-                try {
-                    await ffmpeg.deleteFile('input.ts');
-                    await ffmpeg.deleteFile('output.mp4');
-                } catch (e) {
-                    console.error('Temizleme hatası:', e);
+                    try {
+                        await ffmpegInstance.deleteFile('input.ts');
+                        await ffmpegInstance.deleteFile('output.mp4');
+                    } catch (e) {
+                        console.error('Temizleme hatası:', e);
+                    }
+                } else {
+                    // Fallback: download as TS (most players can play .ts files)
+                    updateDownloadStatus('MP4 dönüştürme kullanılamıyor, TS olarak indiriliyor...');
+                    updateDownloadProgress(95);
+
+                    const tsBlob = new Blob([concatenated.buffer], { type: 'video/mp2t' });
+                    const downloadUrl = URL.createObjectURL(tsBlob);
+                    const a = document.createElement('a');
+                    a.href = downloadUrl;
+                    a.download = safeName + '.ts';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(downloadUrl);
                 }
 
                 updateDownloadProgress(100);
