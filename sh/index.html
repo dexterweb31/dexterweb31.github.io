@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Stream Player</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Plyr CSS -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>CoursePlayer</h1>
+        <div class="select-container">
+          <select id="instructorSelect">
+            <!-- Options populated via JS -->
+          </select>
+          <svg class="select-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </div>
+      <div class="loader" id="loader"></div>
+      <div class="video-list" id="videoList">
+        <!-- Video items populated via JS -->
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="player-container">
+        <!-- The video element for Plyr -->
+        <video id="player" controls crossorigin playsinline></video>
+      </div>
+      
+      <div class="now-playing">
+        <h2 id="nowPlayingTitle">Select a video to play</h2>
+        <p id="nowPlayingInstructor">Choose an instructor from the sidebar</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- HLS.js for m3u8 support across all browsers -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <!-- Plyr JS -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>

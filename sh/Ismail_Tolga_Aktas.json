@@ -1,0 +1,608 @@
+[
+  {
+    "title": " NEWTON'IN HAREKET YASALARI KARMA 2 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d7a751ad-16fb-41cd-8c67-9b3b3effd334_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:04"
+  },
+  {
+    "title": "ATOM FİZİĞİNE GİRİŞ VE RADYOAKTİVİTE KARMA 1 - 9. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:3509ee64-5f35-469e-9e23-3164150ff01b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:08"
+  },
+  {
+    "title": "ATOM FİZİĞİNE GİRİŞ VE RADYOAKTİVİTE KARMA 5 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:29431653-aace-4399-813a-caafb0dd6b30_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:56"
+  },
+  {
+    "title": "ATOM FİZİĞİNE GİRİŞ VE RADYOAKTİVİTE ÖDEV 3 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f6cd0128-9499-497b-88ca-76e5392e1c7e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:08"
+  },
+  {
+    "title": "AYDINLANMA VE GÖLGE KARMA 1 - 2. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:dc14c6cb-ad32-4b71-b4e5-3278e70a1f44_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:52"
+  },
+  {
+    "title": "BASINÇ KARMA 1 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bdfa8fe0-3dc9-47e0-a131-c88cd36c128f_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:45"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET GÜNLÜK HAYAT 1 - 5. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4102899f-ee8d-4a9f-bbed-f5b548ae0902_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:10"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET GÜNLÜK HAYAT 1 - 7. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cf251105-6eeb-4ab1-8663-fa77f6f6ecba_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:44"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET GÜNLÜK HAYAT 1 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:245ffabf-e7f5-4526-9649-278dcb9356ea_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:29"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET KARMA 1 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:432fec54-f5ad-4279-84a6-6aa1297ceafb_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:17"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET KARMA 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6239f01d-8cd5-4dc9-a390-02330057b236_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:42"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET KARMA 2 - 2. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4d95fe82-e46d-4188-8b1c-b38f9aec9310_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:06"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET KARMA 2 - 4. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9cb6b04a-86c6-4a90-88a7-398f383ed67a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:53"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET KARMA 3 - 1. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:87ddbbc4-ab67-4e80-a506-d29e4600a4e3_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:06"
+  },
+  {
+    "title": "BASİT HARMONİK HAREKET ÖDEV 2 - 5. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:cbd2cf67-f08e-4d5f-848b-bb39b0e8d71e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:25"
+  },
+  {
+    "title": "BASİT MAKİNELER KARMA 3 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c05865b6-2e52-4902-8603-fd5229fbed9b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:23"
+  },
+  {
+    "title": "BAĞIL HAREKET SEÇİCİ 1 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:95e0f9fc-cd2b-4ecf-b669-4fef73902ab9_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:39"
+  },
+  {
+    "title": "BAĞIL HAREKET ÖDEV 1 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:591cb46e-e189-4865-ba5c-22d4504aa023_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:56"
+  },
+  {
+    "title": "BİR BOYUTTA SABİT İVMELİ HAREKET KARMA 2 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:850f17b9-cbab-4513-b0e4-8506b5ea9f80_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:19"
+  },
+  {
+    "title": "BİR VE İKİ BOYUTTA HAREKET GÜNLÜK HAYAT 1 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b431ce0f-a426-4fe1-97c0-e46ffa2b74ba_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:30"
+  },
+  {
+    "title": "BİR VE İKİ BOYUTTA HAREKET GÜNLÜK HAYAT 2 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f5092f30-091b-4284-93bb-a6e197c618f0_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:27"
+  },
+  {
+    "title": "BİR VE İKİ BOYUTTA HAREKET KARMA 2 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bf778d0f-8eec-4724-b66b-fef7c4fb489a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:41"
+  },
+  {
+    "title": "BİR VE İKİ BOYUTTA HAREKET ÖDEV 3 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:4fb5884e-3ded-449b-b186-0002967c9ba1_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:37"
+  },
+  {
+    "title": "DALGA HAREKETİ VE YAY DALGASI GÜNLÜK HAYAT 1 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9784d6f9-fdc7-45cc-ae1a-1714ac26dc19_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:28"
+  },
+  {
+    "title": "DALGA HAREKETİ VE YAY DALGASI KARMA 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c5aca411-7dc9-4358-8ae4-52c8842ac15e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:39"
+  },
+  {
+    "title": "DALGA HAREKETİ VE YAY DALGASI KARMA 1 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a2ec1b34-d91f-4d84-9550-00a9c2b95aaa_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:09"
+  },
+  {
+    "title": "DALGA HAREKETİ VE YAY DALGASI ORİJİNAL 1 - 1. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f6a86fef-a577-41f7-87fb-2a5931bb3ed6_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:46"
+  },
+  {
+    "title": "DALGA MEKANİĞİ KARMA 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6a5fd5ef-1497-4dbd-90cb-5d3d1c3b0d2e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:25"
+  },
+  {
+    "title": "DALGA MEKANİĞİ KARMA 3 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:8d111ff8-4b68-4755-8a96-1bb34a9d5ae3_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:33"
+  },
+  {
+    "title": "DENGE VE DENGE ŞARTLARI KARMA 2 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:513c4769-b493-4e04-b8f0-d6948239253e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:31"
+  },
+  {
+    "title": "DENGE VE DENGE ŞARTLARI ÖDEV 2 - 2. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:dd5366d8-8118-4d6b-894f-38c594eefbeb_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:10"
+  },
+  {
+    "title": "ELEKTROSTATİK ÖDEV 1 - 1. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c3dec245-39aa-4b8a-89f4-20d1431a22f4_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:49"
+  },
+  {
+    "title": "ELEKTRİK KARMA 2 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:eb8a2c9d-8d2f-4457-8d2d-80c909edeeef_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:23"
+  },
+  {
+    "title": "ELEKTRİK KARMA 3 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:51942479-a95a-42ac-bf70-875897ac3116_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:55"
+  },
+  {
+    "title": "ELEKTRİK KARMA 4 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:018afb0d-de57-4a73-9fed-37f7f7a769b4_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:34"
+  },
+  {
+    "title": "ELEKTRİK KARMA 4 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bc5dcdea-f01b-44ef-9a33-430912a66830_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:27"
+  },
+  {
+    "title": "ENERJİ ÖDEV 1 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e34923cd-e034-41af-91f3-2eff11ee87da_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:54"
+  },
+  {
+    "title": "HAREKET KARMA 3 - 3. SORU ",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9160d644-e710-4a19-9cf8-02a0b23dcd6d_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:52"
+  },
+  {
+    "title": "HAREKET ÖDEV 2 - 1. SORU ",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6d8d4c94-ed99-44d0-b2ea-c97ecdd524b6_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:16"
+  },
+  {
+    "title": "HAREKET ÖDEV 2 - 3. SORU ",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b101ba30-1237-46ba-b018-8ba75d6b1036_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:20"
+  },
+  {
+    "title": "ISI VE SICAKLIK GÜNLÜK HAYAT 2 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0ada9835-111c-48e4-8b2f-90aed5b28a31_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:54"
+  },
+  {
+    "title": "ISI VE SICAKLIK KARMA 4 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0d43d722-e4a5-471b-a85f-d8ec26da7184_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:31"
+  },
+  {
+    "title": "IŞIĞIN KIRILMASI KARMA 2 - 6. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:dd6159c6-4e68-4d99-9527-6214a9a2773a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:43"
+  },
+  {
+    "title": "KALDIRMA KUVVETİ - KARMA 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0e030bd1-845e-4f86-87cd-baeb01a9385d_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "23:21"
+  },
+  {
+    "title": "KALDIRMA KUVVETİ GÜNLÜK HAYAT 1 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:33a1906a-87b0-4b73-a1a7-eb7936b7584a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:10"
+  },
+  {
+    "title": "KALDIRMA KUVVETİ ÖDEV 1 - 4. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:dafc00b4-98b8-4ae0-9077-8c153b402228_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "04:09"
+  },
+  {
+    "title": "KUVVET KARMA 2 - 5. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:79301705-eed1-49c7-8e44-84f7002c2413_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:05"
+  },
+  {
+    "title": "KUVVET KARMA 3 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e82c106c-2011-4736-b4f2-4c6fb02e2f4f_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:26"
+  },
+  {
+    "title": "KUVVET KARMA 3 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bf476f6a-0d26-4267-8001-b47913e0af33_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:59"
+  },
+  {
+    "title": "MADDE VE ÖZELLİKLERİ KARMA 4 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:16c51635-3b61-4a9c-9d48-90be5e7343bc_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:49"
+  },
+  {
+    "title": "MADDE VE ÖZELLİKLERİ ÖDEV 2 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:a130b0fc-a365-4d66-9e93-4d72f3603716_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:23"
+  },
+  {
+    "title": "MANYETİZMA KARMA 4 - 4. SORU ",
+    "stream_url": "https://karinca-video.mncdn.com/smil:20d48e3d-0d05-4555-9840-ef53ed94480b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:40"
+  },
+  {
+    "title": "MERCEKLER, PRİZMALAR VE RENK KARMA 4 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:1cd91215-357a-409d-93a8-55130fe4f6c7_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:14"
+  },
+  {
+    "title": "MODERN FİZİK KARMA 4 - 1. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:2756dd97-a36e-419b-a40b-eecf5ab11d1f_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:09"
+  },
+  {
+    "title": "MODERN FİZİK ÖDEV 2 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:53f7331a-b485-40b2-8be9-4e3888f46d80_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:48"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 1. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:834f01df-1c04-47fe-862c-cf0787123279_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:16"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 2. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5f09bb4f-70c9-40ba-9cd1-3a772b018b36_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:19"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e81ea742-da7a-4734-81ca-a2e319a7b4db_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:14"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 4. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f40fe1c7-2714-4502-977d-a028cdc9744a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:07"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 5. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:574346b6-a42a-42fc-be39-19eaa543075d_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:26"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 6. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0ac2c347-7e94-41ba-99ec-8f44f0df1f16_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:24"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 7. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:13e493a0-aaac-48a0-ad3f-2bc0bf991b9c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:14"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI GÜNLÜK HAYAT 1 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e31f0e25-05a9-4474-8e10-93bb6b33554d_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:17"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI KARMA 1 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:bd267fa6-a13d-42c2-b543-22a5e20509d6_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:42"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI KARMA 1 - 4. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:f906f440-4394-40b1-bbde-aaa14a2be556_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:51"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI KARMA 1 - 6. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:ecfec9a0-46d4-40db-9c19-334dea11509c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:05"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ORİJİNAL - 1. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5f2f74ec-8edf-481a-bf39-31e6f41b9389_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:54"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ORİJİNAL - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:85824e29-1602-4b86-927c-a6b1e210bb62_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:38"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI SEÇİCİ - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:e3bc0f57-398a-4696-80f2-63fca376c2d9_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:37"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 1. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:21b3690e-5bdb-406b-ae3b-b0e18fb1dfef_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:38"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:c7d2c358-115a-4056-ada0-4b723a451d7c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:28"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:80ebf334-98ce-40fc-bb8a-0b15d8c1d783_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:12"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:66bec37a-d5c2-4095-ad77-b244106d9693_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:44"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 5. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:7a4762a6-3c16-4bb9-82d7-311f3928bcba_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:17"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:021a8a05-21c4-4674-a811-a8616a262b8c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:41"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:6f0e2df4-abf3-4b2c-8dc7-61cc18fc2cec_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:24"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 1 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:64616750-8396-406d-93be-136363574a6f_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:15"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 1. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:95a5dd09-5dff-4ed6-bc71-17bb65a5b633_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:16"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:df5fb728-86a7-412a-b707-74c3d8aa194b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:42"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 3. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:ef80bf3e-2008-4872-b7b9-eb0b95d6512b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:20"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 4. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:8a42939e-b90c-4468-b6e9-242acdce06f4_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:09"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 5. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:8ce48a50-b420-4ac8-8fa5-c4d52299a5a5_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:18"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 6. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:86b5f6e5-7c08-407c-8daf-d2cf3a31fd7e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:29"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 7. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:57cdb13d-67d3-451a-9f88-60c0453f3329_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:57"
+  },
+  {
+    "title": "MODERN FİZİĞİN TEKNOLOJİDEKİ UYGULAMALARI ÖDEV 2 - 8. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:16514a43-4639-4f8d-bacb-d9633732c08b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:42"
+  },
+  {
+    "title": "SES VE DEPREM DALGALARI KARMA 1 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:082d9948-d635-40a5-9392-06155e437c20_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:09"
+  },
+  {
+    "title": "SES VE DEPREM DALGALARI KARMA 2 - 2. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:5d6b9e80-7064-4d7a-8674-7e87badcd20c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:14"
+  },
+  {
+    "title": "SU DALGALARI ÖDEV 2 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:448e4965-d4ea-4223-85db-2e8537af3d56_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:49"
+  },
+  {
+    "title": "SU DALGALARI ÖDEV 2 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:61404782-9c27-47c1-917c-c882eeb6af7d_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:50"
+  },
+  {
+    "title": "VEKTÖRLER KARMA 2 - 8. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9d0ff33b-d17c-4e46-a179-f10b559c46d0_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:01"
+  },
+  {
+    "title": "ÇEMBERSEL HAREKET - KARMA 2",
+    "stream_url": "https://karinca-video.mncdn.com/smil:9630af58-be8b-42c3-818e-7c9056c35c60_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "21:58"
+  },
+  {
+    "title": "ÇEMBERSEL HAREKET GÜNLÜK HAYAT 2 - 4. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:78421bcb-fca8-4c26-95d0-a4306db0e03e_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:06"
+  },
+  {
+    "title": "ÇEMBERSEL HAREKET KARMA 3 - 4 SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:0bfab6fc-158b-42e8-813e-57c75c5e9340_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "00:46"
+  },
+  {
+    "title": "ÇEMBERSEL HAREKET KARMA 4 - 6. SORU\t",
+    "stream_url": "https://karinca-video.mncdn.com/smil:b9f014c0-33db-412f-8770-98c75d09241a_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:23"
+  },
+  {
+    "title": "İTME VE ÇİZGİSEL MOMENTUM - KARMA 1",
+    "stream_url": "https://karinca-video.mncdn.com/smil:aa784bc3-72f1-4934-8e0f-900ac92aa34f_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "15:57"
+  },
+  {
+    "title": "İTME VE ÇİZGİSEL MOMENTUM KARMA 3 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:11a3acd0-4948-4f42-870c-7ff04f2913a8_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:40"
+  },
+  {
+    "title": "İTME VE ÇİZGİSEL MOMENTUM ÖDEV 3 - 7. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:2a89909e-2459-446c-9ad7-ae0bdcab5487_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "03:02"
+  },
+  {
+    "title": "İTME VE ÇİZGİSEL MOMENTUM ÖDEV 4 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:d104480b-bc69-450a-83d3-75634f5eab8c_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:23"
+  },
+  {
+    "title": "İŞ, GÜÇ VE ENERJİ GÜNLÜK HAYAT 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:06c19698-1d75-4bc1-862f-5b41a05df431_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:32"
+  },
+  {
+    "title": "İŞ, GÜÇ VE ENERJİ GÜNLÜK HAYAT 1 - 6. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:73a30323-adf7-4c79-85a6-3070cf7ec36b_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "01:29"
+  },
+  {
+    "title": "İŞ, GÜÇ VE ENERJİ ÖDEV 4 - 3. SORU",
+    "stream_url": "https://karinca-video.mncdn.com/smil:7bd15a8a-059a-40a3-b3d8-00d9936383ff_smil.smil/playlist.m3u8",
+    "instructor_name": "İsmail Tolga Aktaş",
+    "duration": "02:24"
+  }
+]
