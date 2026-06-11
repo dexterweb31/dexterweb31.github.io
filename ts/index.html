@@ -4,237 +4,489 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Ders Platformu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <meta name="description" content="Ders video platformu - Online eğitim videoları">
+    <title>Ders Video Platformu</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+
     <style>
-        * {
+        /* ====== CSS Reset & Variables ====== */
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0f0f0f;
-            color: #f1f1f1;
-            min-height: 100vh;
-        }
-
-        /* Layout */
-        .page-wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .main-content {
-            display: flex;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 24px;
-            gap: 24px;
-            width: 100%;
-        }
-
-        .player-section {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .sidebar {
-            width: 400px;
-            flex-shrink: 0;
-        }
-
-        /* Plyr Theme */
-        .plyr-container {
-            border-radius: 12px;
-            overflow: hidden;
-            background: #000;
-        }
-
         :root {
-            --plyr-color-main: #ff0000;
-            --plyr-video-background: #000;
-            --plyr-menu-background: #212121;
-            --plyr-menu-color: #f1f1f1;
-            --plyr-menu-border-color: rgba(255, 255, 255, 0.08);
-            --plyr-badge-background: #ff0000;
-            --plyr-badge-text-color: #fff;
-            --plyr-control-icon-size: 20px;
-            --plyr-tooltip-background: rgba(0, 0, 0, 0.85);
-            --plyr-tooltip-color: #fff;
-            --plyr-tooltip-radius: 6px;
-            --plyr-font-family: 'Inter', sans-serif;
-            --plyr-font-size-base: 14px;
-            --plyr-font-size-small: 12px;
-            --plyr-font-size-time: 13px;
-            --plyr-range-thumb-height: 14px;
-            --plyr-range-thumb-background: #fff;
-            --plyr-range-track-height: 4px;
-            --plyr-range-fill-background: #ff0000;
-            --plyr-video-control-background-hover: rgba(255, 255, 255, 0.15);
-            --plyr-video-controls-background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a2e;
+            --bg-card: #16162a;
+            --bg-hover: #1e1e3a;
+            --bg-active: #252550;
+            --text-primary: #e8e8f0;
+            --text-secondary: #9090b0;
+            --text-muted: #606080;
+            --accent: #6c5ce7;
+            --accent-light: #a29bfe;
+            --accent-glow: rgba(108, 92, 231, 0.3);
+            --accent-gradient: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            --success: #00cec9;
+            --warning: #fdcb6e;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-active: rgba(108, 92, 231, 0.4);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 30px rgba(108, 92, 231, 0.15);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .plyr__menu__container {
-            background: #212121 !important;
-            border-radius: 12px !important;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6) !important;
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .plyr__menu__container .plyr__control {
-            color: #eee !important;
-            font-size: 13px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .plyr__menu__container .plyr__control:hover,
-        .plyr__menu__container .plyr__control:focus {
-            background: rgba(255, 255, 255, 0.1) !important;
-        }
-
-        .plyr__menu__container .plyr__control[aria-checked="true"]::before {
-            background: #3ea6ff !important;
-        }
-
-        .plyr__menu__container .plyr__control--back {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-            font-weight: 600;
-        }
-
-        .plyr--video {
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .plyr__controls__item.plyr__time {
-            font-variant-numeric: tabular-nums;
-        }
-
-        /* Video Info */
-        .video-info {
-            padding: 16px 0;
-        }
-
-        .video-title {
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 1.4;
-            color: #f1f1f1;
-        }
-
-        .video-meta {
-            font-size: 13px;
-            color: #aaa;
-            margin-top: 6px;
-        }
-
-        /* Sidebar */
-        .sidebar-section {
-            background: #1a1a1a;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 16px;
-        }
-
-        .sidebar-header {
-            padding: 14px 16px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #f1f1f1;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .sidebar-header svg {
-            width: 18px;
-            height: 18px;
-            fill: #3ea6ff;
-        }
-
-        .instructor-select {
-            width: 100%;
-            padding: 10px 16px;
-            background: #272727;
-            color: #f1f1f1;
-            border: none;
-            font-size: 14px;
-            font-family: 'Inter', sans-serif;
-            cursor: pointer;
-            outline: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .instructor-select:focus {
-            background: #333;
-        }
-
-        .instructor-select option {
-            background: #272727;
-            color: #f1f1f1;
-        }
-
-        /* Lesson List */
-        .lesson-list {
-            max-height: calc(100vh - 200px);
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: #555 transparent;
-        }
-
-        .lesson-list::-webkit-scrollbar {
+        /* ====== Scrollbar ====== */
+        ::-webkit-scrollbar {
             width: 6px;
         }
 
-        .lesson-list::-webkit-scrollbar-track {
+        ::-webkit-scrollbar-track {
             background: transparent;
         }
 
-        .lesson-list::-webkit-scrollbar-thumb {
-            background: #555;
-            border-radius: 3px;
+        ::-webkit-scrollbar-thumb {
+            background: var(--text-muted);
+            border-radius: 10px;
         }
 
-        .lesson-item {
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
+        }
+
+        /* ====== Header ====== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 32px;
+            height: 64px;
             display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 10px 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent-gradient);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            background: var(--bg-tertiary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .stat-badge .count {
+            color: var(--accent-light);
+            font-weight: 600;
+        }
+
+        /* ====== Main Layout ====== */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 300px 1fr 380px;
+            height: calc(100vh - 64px);
+        }
+
+        /* ====== Sidebar (Instructors) ====== */
+        .sidebar {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            padding: 20px 20px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 14px 10px 38px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.85rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-box input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .search-box::before {
+            content: '🔍';
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.85rem;
+            pointer-events: none;
+        }
+
+        .instructor-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .instructor-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
             cursor: pointer;
-            transition: background 0.15s;
-            border-left: 3px solid transparent;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            margin-bottom: 2px;
         }
 
-        .lesson-item:hover {
-            background: rgba(255, 255, 255, 0.06);
+        .instructor-item:hover {
+            background: var(--bg-hover);
+            border-color: var(--border);
         }
 
-        .lesson-item.active {
-            background: rgba(62, 166, 255, 0.08);
-            border-left-color: #3ea6ff;
+        .instructor-item.active {
+            background: var(--bg-active);
+            border-color: var(--border-active);
+            box-shadow: var(--shadow-glow);
         }
 
-        .lesson-number {
-            font-size: 13px;
-            color: #717171;
-            min-width: 22px;
-            padding-top: 2px;
-            text-align: center;
+        .instructor-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            color: #fff;
+            text-transform: uppercase;
         }
 
-        .lesson-details {
+        .instructor-info {
             flex: 1;
             min-width: 0;
         }
 
-        .lesson-title {
-            font-size: 13px;
+        .instructor-name {
+            font-size: 0.85rem;
             font-weight: 500;
-            color: #f1f1f1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .instructor-count {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* ====== Player Area ====== */
+        .player-area {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        .player-container {
+            position: relative;
+            background: #000;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .player-container video {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Plyr Overrides */
+        .plyr {
+            --plyr-color-main: #6c5ce7;
+            --plyr-video-background: #000;
+            --plyr-menu-background: rgba(26, 26, 46, 0.95);
+            --plyr-menu-color: #e8e8f0;
+            --plyr-menu-border-color: rgba(255, 255, 255, 0.1);
+            --plyr-menu-radius: 10px;
+            --plyr-menu-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            --plyr-badge-background: #6c5ce7;
+            --plyr-badge-text-color: #fff;
+            --plyr-control-icon-size: 18px;
+            --plyr-range-fill-background: #6c5ce7;
+            --plyr-video-control-color: #fff;
+            --plyr-video-control-background-hover: rgba(108, 92, 231, 0.3);
+            border-radius: 0;
+        }
+
+        .plyr__menu__container {
+            backdrop-filter: blur(12px);
+        }
+
+        /* Video Info Bar */
+        .video-info-bar {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+
+        .video-title-main {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .video-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .video-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .video-meta-item .icon {
+            font-size: 0.9rem;
+        }
+
+        .quality-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 10px;
+            background: var(--accent-gradient);
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* ====== Playlist Panel ====== */
+        .playlist-panel {
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .playlist-header {
+            padding: 20px 20px 16px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .playlist-title-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .playlist-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .playlist-count-badge {
+            background: var(--bg-tertiary);
+            color: var(--accent-light);
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .playlist-search {
+            width: 100%;
+            margin-top: 12px;
+            padding: 8px 12px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.82rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .playlist-search:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .playlist-search::placeholder {
+            color: var(--text-muted);
+        }
+
+        .playlist-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .playlist-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            margin-bottom: 2px;
+        }
+
+        .playlist-item:hover {
+            background: var(--bg-hover);
+            border-color: var(--border);
+        }
+
+        .playlist-item.active {
+            background: var(--bg-active);
+            border-color: var(--border-active);
+        }
+
+        .playlist-item.active .playlist-item-index {
+            background: var(--accent-gradient);
+            color: #fff;
+            border-color: transparent;
+        }
+
+        .playlist-item-index {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .playlist-item.active .playlist-item-index::after {
+            content: '▶';
+            font-size: 0.55rem;
+        }
+
+        .playlist-item.active .playlist-item-index .idx-num {
+            display: none;
+        }
+
+        .playlist-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .playlist-item-title {
+            font-size: 0.82rem;
+            font-weight: 500;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -242,651 +494,848 @@
             overflow: hidden;
         }
 
-        .lesson-meta {
-            font-size: 12px;
-            color: #717171;
-            margin-top: 3px;
-        }
-
-        .lesson-playing-icon {
-            display: none;
-            width: 14px;
-            height: 14px;
-            margin-top: 2px;
-        }
-
-        .lesson-item.active .lesson-playing-icon {
-            display: block;
-        }
-
-        .lesson-item.active .lesson-number {
-            display: none;
-        }
-
-        /* Empty State */
-        .empty-state {
-            padding: 40px 16px;
-            text-align: center;
-            color: #717171;
-            font-size: 13px;
-        }
-
-        .empty-state svg {
-            width: 48px;
-            height: 48px;
-            fill: #333;
-            margin-bottom: 12px;
-        }
-
-        /* Download Button */
-        .lesson-download {
-            background: none;
-            border: none;
-            padding: 6px;
-            cursor: pointer;
-            border-radius: 50%;
+        .playlist-item-duration {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 4px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            transition: background 0.15s, transform 0.15s;
-            flex-shrink: 0;
-            opacity: 0;
+            gap: 4px;
         }
 
-        .lesson-item:hover .lesson-download {
-            opacity: 1;
-        }
-
-        .lesson-download:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: scale(1.1);
-        }
-
-        .lesson-download svg {
-            width: 18px;
-            height: 18px;
-            fill: #aaa;
-            transition: fill 0.15s;
-        }
-
-        .lesson-download:hover svg {
-            fill: #3ea6ff;
-        }
-
-        /* Download Modal */
-        .dl-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.85);
+        /* ====== Welcome State ====== */
+        .welcome-state {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 10000;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-            backdrop-filter: blur(8px);
-        }
-
-        .dl-overlay.show {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .dl-modal {
-            background: #1f1f1f;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 24px;
-            width: 90%;
-            max-width: 480px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-            text-align: center;
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-        }
-
-        .dl-overlay.show .dl-modal {
-            transform: scale(1);
-        }
-
-        .dl-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: #fff;
-        }
-
-        .dl-status {
-            font-size: 14px;
-            color: #aaa;
-            margin-bottom: 20px;
-            min-height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 1.4;
-        }
-
-        .dl-bar-wrap {
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 24px;
-        }
-
-        .dl-bar {
             height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, #3ea6ff, #0056b3);
-            border-radius: 4px;
-            transition: width 0.2s ease;
+            text-align: center;
+            padding: 40px;
         }
 
-        .dl-cancel {
-            background: #272727;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #fff;
-            padding: 8px 24px;
-            border-radius: 20px;
-            font-size: 14px;
-            cursor: pointer;
-            font-family: 'Inter', sans-serif;
-            transition: background 0.15s, border-color 0.15s;
+        .welcome-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-gradient);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-glow);
+            animation: float 3s ease-in-out infinite;
         }
 
-        .dl-cancel:hover {
-            background: #3f3f3f;
-            border-color: rgba(255, 255, 255, 0.3);
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .main-content {
-                flex-direction: column;
-                padding: 12px;
+        .welcome-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .welcome-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        /* ====== Empty Playlist ====== */
+        .empty-playlist {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        .empty-playlist .empty-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+
+        .empty-playlist p {
+            font-size: 0.85rem;
+        }
+
+        /* ====== Loading Spinner ====== */
+        .loading-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            backdrop-filter: blur(4px);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(108, 92, 231, 0.2);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ====== Responsive ====== */
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 260px 1fr 320px;
+            }
+        }
+
+        @media (max-width: 960px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+                height: auto;
             }
 
             .sidebar {
-                width: 100%;
+                display: none;
             }
 
-            .lesson-list {
-                max-height: 400px;
+            .playlist-panel {
+                border-left: none;
+                border-top: 1px solid var(--border);
+                max-height: 50vh;
+            }
+
+            .header-stats {
+                display: none;
+            }
+
+            /* Mobile instructor selector */
+            .mobile-instructor-select {
+                display: block !important;
             }
         }
 
-        @media (max-width: 640px) {
-            .main-content {
-                padding: 0;
+        .mobile-instructor-select {
+            display: none;
+            padding: 12px 20px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mobile-instructor-select select {
+            width: 100%;
+            padding: 10px 14px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.85rem;
+            outline: none;
+        }
+
+        /* ====== Fade-in animation ====== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
             }
 
-            .plyr-container,
-            .plyr--video {
-                border-radius: 0;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
+        }
 
-            .video-info {
-                padding: 12px;
-            }
-
-            .sidebar {
-                padding: 0 8px;
-            }
+        .fade-in {
+            animation: fadeIn 0.3s ease forwards;
         }
     </style>
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <div class="main-content">
-            <div class="player-section">
-                <div class="plyr-container">
-                    <video id="player" playsinline></video>
-                </div>
-                <div class="video-info">
-                    <div class="video-title" id="videoTitle">Bir ders seçin</div>
-                    <div class="video-meta" id="videoMeta"></div>
-                </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <span>Ders Videoları</span>
+        </div>
+        <div class="header-stats">
+            <div class="stat-badge">
+                <span>👨‍🏫</span>
+                <span id="total-instructors" class="count">0</span>
+                <span>Eğitmen</span>
             </div>
-
-            <div class="sidebar">
-                <div class="sidebar-section">
-                    <div class="sidebar-header">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                        </svg>
-                        Eğitmen
-                    </div>
-                    <select id="instructorSelect" class="instructor-select">
-                        <option value="">Eğitmen seçin...</option>
-                    </select>
-                </div>
-
-                <div class="sidebar-section">
-                    <div class="sidebar-header">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
-                        </svg>
-                        Dersler
-                    </div>
-                    <div class="lesson-list" id="lessonList">
-                        <div class="empty-state">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
-                            </svg>
-                            <p>Ders listesini görmek için bir eğitmen seçin</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-badge">
+                <span>🎬</span>
+                <span id="total-videos" class="count">0</span>
+                <span>Video</span>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Download Modal -->
-    <div class="dl-overlay" id="dlOverlay">
-        <div class="dl-modal">
-            <div class="dl-title" id="dlTitle">Video İndiriliyor</div>
-            <div class="dl-bar-wrap">
-                <div class="dl-bar" id="dlBar"></div>
+    <!-- Main Layout -->
+    <main class="main-layout" id="main-layout">
+
+        <!-- Sidebar: Instructor List -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">Eğitmenler</div>
+                <div class="search-box">
+                    <input type="text" id="instructor-search" placeholder="Eğitmen ara...">
+                </div>
             </div>
-            <div class="dl-status" id="dlStatus">Hazırlanıyor...</div>
-            <button class="dl-cancel" id="dlCancel">İptal Et</button>
-        </div>
-    </div>
+            <div class="instructor-list" id="instructor-list"></div>
+        </aside>
 
+        <!-- Player Area -->
+        <section class="player-area" id="player-area">
+            <!-- Mobile instructor selector -->
+            <div class="mobile-instructor-select">
+                <select id="mobile-instructor-dropdown">
+                    <option value="">Eğitmen seçin...</option>
+                </select>
+            </div>
+
+            <div class="player-container" id="player-container">
+                <div class="welcome-state" id="welcome-state">
+                    <div class="welcome-icon">▶</div>
+                    <h1 class="welcome-title">Hoş Geldiniz</h1>
+                    <p class="welcome-text">Sol panelden bir eğitmen seçerek ders videolarını izlemeye başlayın.</p>
+                </div>
+                <video id="player" playsinline controls crossorigin style="display:none;"></video>
+            </div>
+            <div class="video-info-bar" id="video-info-bar" style="display:none;">
+                <div class="video-title-main" id="current-video-title">—</div>
+                <div class="video-meta">
+                    <div class="video-meta-item">
+                        <span class="icon">👨‍🏫</span>
+                        <span id="current-instructor">—</span>
+                    </div>
+                    <div class="video-meta-item">
+                        <span class="icon">⏱️</span>
+                        <span id="current-duration">—</span>
+                    </div>
+                    <div class="video-meta-item" id="quality-display">
+                        <span class="quality-badge" id="current-quality">Auto</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlist Panel -->
+        <aside class="playlist-panel" id="playlist-panel">
+            <div class="playlist-header">
+                <div>
+                    <div class="playlist-title-row">
+                        <span class="playlist-title" id="playlist-title">Video Listesi</span>
+                        <span class="playlist-count-badge" id="playlist-count">0</span>
+                    </div>
+                    <input type="text" class="playlist-search" id="playlist-search" placeholder="Video ara...">
+                </div>
+            </div>
+            <div class="playlist-items" id="playlist-items">
+                <div class="empty-playlist">
+                    <div class="empty-icon">📚</div>
+                    <p>Bir eğitmen seçerek<br>videoları görüntüleyin</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- HLS.js -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script>
-        // ==================== CONFIG ====================
-        const INSTRUCTORS = [
-            'Ahmet_Atilla_Yilmazer', 'Ali_Sacan', 'All_Star_Ogretmeni',
-            'Altug_Gunes', 'Baris_Kapan', 'Bayram_Meral',
-            'Betul_Buyukkalayci', 'Burak_Onay', 'Busra_Altinok',
-            'Celal_Gunduz', 'Deniz_Bozkurt', 'Deniz_Ongel',
-            'Didar_Baskin', 'Enes_Avci', 'Enise_Ozdemir',
-            'Erdal_Aydemir', 'Erkan_Ayranci', 'Erkan_Tuncer',
-            'Eyup_Boncuk', 'Fatih_Demirkaya', 'Fatih_Vural',
-            'Ferda_Kurnaz_Karagoz', 'Gorkem_Sahin', 'Gri_Koc',
-            'Gulhan_Sen', 'Hale_Karatas', 'Hilmi_Yavuz',
-            'Ibrahim_Turker', 'Ibrahim_Ulas_Baldemir', 'Ilhan_Aslan',
-            'Ilyas_Gunes', 'Ismail_Kocabas', 'Ismail_Tolga_Aktas',
-            'Kader_Altinel', 'Kadir_Gumus', 'Kanan_Kara',
-            'Kemal_Coskun', 'Kenan_Kara', 'Mahsum_Ozturk',
-            'Mehmet_Celal_Ozyildiz', 'Mehmet_Dural', 'Mehmet_Durmus',
-            'Mesut_Ugurdogan', 'Murat_Namli', 'Mustafa_Ozturk',
-            'Mustafa_Yagci', 'Nagihan_Hoca', 'Nurtac_Kozak',
-            'Nurten_Aydin', 'Oktay_Duran', 'Onay_CEPE',
-            'Onur_Soguk', 'Ozcan_Aykin', 'Ozer_Akgumus',
-            'Ozlem_Penekli', 'Oznur_Saat_Yildirim', 'Rabia_Nalan_Cinar',
-            'Recep_Ustunel', 'Rustu_Bayindir', 'Salih_Yildirir',
-            'Selim_Yuksel', 'Selma_Kalemci', 'Semih_Akpinar',
-            'Senol_Aydin', 'Sercan_Dural', 'Sinan_Aydin',
-            'Sukru_Akkoyun', 'Uzay_Aslanturk', 'Veysel_Boynuegri',
-            'Yavuz_Tuna', 'Yunus_Turan'
-        ];
+    <!-- Plyr -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
-        const PLYR_I18N = {
-            restart: 'Baştan Başlat',
-            rewind: '{seektime} saniye geri',
-            play: 'Oynat',
-            pause: 'Duraklat',
-            fastForward: '{seektime} saniye ileri',
-            seek: 'Ara',
-            seekLabel: '{currentTime} / {duration}',
-            played: 'Oynatıldı',
-            buffered: 'Tamponlandı',
-            currentTime: 'Şu anki zaman',
-            duration: 'Süre',
-            volume: 'Ses',
-            mute: 'Sesi Kapat',
-            unmute: 'Sesi Aç',
-            download: 'İndir',
-            enterFullscreen: 'Tam Ekran',
-            exitFullscreen: 'Tam Ekrandan Çık',
-            settings: 'Ayarlar',
-            menuBack: 'Geri',
-            speed: 'Hız',
-            normal: 'Normal',
-            quality: 'Kalite',
-            loop: 'Döngü',
-            start: 'Başlangıç',
-            end: 'Bitiş',
-            all: 'Tümü',
-            reset: 'Sıfırla',
-            disabled: 'Kapalı',
-            enabled: 'Açık',
-            qualityBadge: {
-                2160: '4K',
-                1440: 'HD',
-                1080: 'HD',
-                720: 'HD',
-                576: 'SD',
-                480: 'SD',
-            },
+    <script>
+        // ====== State ======
+        const state = {
+            instructors: [],       // { name, fileName, videoCount }
+            currentInstructor: null,
+            videos: [],            // current instructor's videos
+            currentVideoIndex: -1,
+            hls: null,
+            player: null,
+            qualityOptions: [],
         };
 
-        // ==================== STATE ====================
-        let hls = null;
-        let player = null;
-        let streamUrl = '';
-        let lessons = [];
-        let activeIndex = -1;
+        // ====== JSON Files List (instructor files in the directory) ======
+        const JSON_FILES = [
+            "Ahmet_Atilla_Yilmazer.json",
+            "Ali_Sacan.json",
+            "All_Star_Ogretmeni.json",
+            "Altug_Gunes.json",
+            "Baris_Kapan.json",
+            "Bayram_Meral.json",
+            "Betul_Buyukkalayci.json",
+            "Burak_Onay.json",
+            "Busra_Altinok.json",
+            "Celal_Gunduz.json",
+            "Deniz_Bozkurt.json",
+            "Deniz_Ongel.json",
+            "Didar_Baskin.json",
+            "Enise_Ozdemir.json",
+            "Enes_Avci.json",
+            "Erdal_Aydemir.json",
+            "Erkan_Ayranci.json",
+            "Erkan_Tuncer.json",
+            "Eyup_Boncuk.json",
+            "Fatih_Demirkaya.json",
+            "Fatih_Vural.json",
+            "Ferda_Kurnaz_Karagoz.json",
+            "Gorkem_Sahin.json",
+            "Gri_Koc.json",
+            "Gulhan_Sen.json",
+            "Hale_Karatas.json",
+            "Hilmi_Yavuz.json",
+            "Ibrahim_Turker.json",
+            "Ibrahim_Ulas_Baldemir.json",
+            "Ilhan_Aslan.json",
+            "Ilyas_Gunes.json",
+            "Ismail_Kocabas.json",
+            "Ismail_Tolga_Aktas.json",
+            "Kader_Altinel.json",
+            "Kadir_Gumus.json",
+            "Kanan_Kara.json",
+            "Kemal_Coskun.json",
+            "Kenan_Kara.json",
+            "Mahsum_Ozturk.json",
+            "Mehmet_Celal_Ozyildiz.json",
+            "Mehmet_Dural.json",
+            "Mehmet_Durmus.json",
+            "Mesut_Ugurdogan.json",
+            "Murat_Namli.json",
+            "Mustafa_Ozturk.json",
+            "Mustafa_Yagci.json",
+            "Nagihan_Hoca.json",
+            "Nurtac_Kozak.json",
+            "Nurten_Aydin.json",
+            "Oktay_Duran.json",
+            "Onay_CEPE.json",
+            "Onur_Soguk.json",
+            "Ozcan_Aykin.json",
+            "Ozer_Akgumus.json",
+            "Ozlem_Penekli.json",
+            "Oznur_Saat_Yildirim.json",
+            "Rabia_Nalan_Cinar.json",
+            "Recep_Ustunel.json",
+            "Rustu_Bayindir.json",
+            "Salih_Yildirir.json",
+            "Selim_Yuksel.json",
+            "Selma_Kalemci.json",
+            "Semih_Akpinar.json",
+            "Senol_Aydin.json",
+            "Sercan_Dural.json",
+            "Sinan_Aydin.json",
+            "Sukru_Akkoyun.json",
+            "Uzay_Aslanturk.json",
+            "Veysel_Boynuegri.json",
+            "Yavuz_Tuna.json",
+            "Yunus_Turan.json"
+        ];
 
-        // ==================== DOM ====================
-        const videoEl = document.getElementById('player');
-        const titleEl = document.getElementById('videoTitle');
-        const metaEl = document.getElementById('videoMeta');
-        const selectEl = document.getElementById('instructorSelect');
-        const listEl = document.getElementById('lessonList');
+        // ====== Utility: Avatar Colors ======
+        const AVATAR_COLORS = [
+            '#6c5ce7', '#00cec9', '#e17055', '#fdcb6e', '#0984e3',
+            '#d63031', '#00b894', '#e84393', '#636e72', '#2d3436',
+            '#a29bfe', '#74b9ff', '#55efc4', '#fab1a0', '#81ecec',
+        ];
 
-        // ==================== INIT ====================
-        document.addEventListener('DOMContentLoaded', () => {
-            // Populate instructor dropdown
-            INSTRUCTORS.forEach(name => {
-                const opt = document.createElement('option');
-                opt.value = name + '.json';
-                opt.textContent = name.replaceAll('_', ' ');
-                selectEl.appendChild(opt);
-            });
+        function getAvatarColor(name) {
+            let hash = 0;
+            for (let i = 0; i < name.length; i++) {
+                hash = name.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            return AVATAR_COLORS[Math.abs(hash) % AVATAR_COLORS.length];
+        }
 
-            selectEl.addEventListener('change', loadLessons);
+        function getInitials(name) {
+            return name.split(/[_ ]+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+        }
 
-            // Create initial Plyr (no video yet)
-            player = createPlyr();
-        });
+        function formatInstructorName(fileName) {
+            return fileName.replace('.json', '').replace(/_/g, ' ');
+        }
 
-        // ==================== PLYR ====================
-        function createPlyr(qualityOpts) {
-            const opts = {
-                controls: [
-                    'play-large', 'rewind', 'play', 'fast-forward',
-                    'progress', 'current-time', 'duration',
-                    'mute', 'volume', 'settings', 'download', 'fullscreen'
-                ],
-                settings: ['quality', 'speed'],
-                speed: { selected: 1, options: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
-                tooltips: { controls: true, seek: true },
-                keyboard: { focused: true, global: true },
-                seekTime: 10,
-                urls: { download: null },
-                i18n: PLYR_I18N,
+        // ====== Init Plyr + HLS ======
+        function initPlayer() {
+            const video = document.getElementById('player');
+
+            // Default quality options for Plyr
+            const defaultQualityOptions = {
+                default: -1, // auto
+                options: [],
+                forced: true,
+                onChange: (quality) => updateQuality(quality),
             };
 
-            if (qualityOpts) {
-                opts.quality = qualityOpts;
-            }
+            state.player = new Plyr(video, {
+                controls: [
+                    'play-large', 'rewind', 'play', 'fast-forward',
+                    'progress', 'current-time', 'duration', 'mute',
+                    'volume', 'settings', 'pip', 'airplay', 'fullscreen'
+                ],
+                settings: ['quality', 'speed'],
+                quality: defaultQualityOptions,
+                speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 2] },
+                keyboard: { focused: true, global: true },
+                tooltips: { controls: true, seek: true },
+                i18n: {
+                    restart: 'Yeniden Başlat',
+                    rewind: '{seektime} saniye geri',
+                    play: 'Oynat',
+                    pause: 'Duraklat',
+                    fastForward: '{seektime} saniye ileri',
+                    seek: 'Ara',
+                    seekLabel: '{currentTime} / {duration}',
+                    played: 'Oynandı',
+                    buffered: 'Tamponlandı',
+                    currentTime: 'Geçen süre',
+                    duration: 'Süre',
+                    volume: 'Ses',
+                    mute: 'Sessiz',
+                    unmute: 'Sesi Aç',
+                    enableCaptions: 'Altyazıları Aç',
+                    disableCaptions: 'Altyazıları Kapat',
+                    download: 'İndir',
+                    enterFullscreen: 'Tam Ekran',
+                    exitFullscreen: 'Tam Ekrandan Çık',
+                    frameTitle: 'Video oynatıcı',
+                    captions: 'Altyazılar',
+                    settings: 'Ayarlar',
+                    pip: 'Küçük Ekran',
+                    menuBack: 'Geri',
+                    speed: 'Hız',
+                    normal: 'Normal',
+                    quality: 'Kalite',
+                    loop: 'Döngü',
+                    start: 'Başlangıç',
+                    end: 'Bitiş',
+                    all: 'Tümü',
+                    reset: 'Sıfırla',
+                    disabled: 'Devre Dışı',
+                    enabled: 'Etkin',
+                    advertisement: 'Reklam',
+                    qualityBadge: {
+                        2160: '4K',
+                        1440: 'QHD',
+                        1080: 'FHD',
+                        720: 'HD',
+                        576: 'SD',
+                        480: 'SD',
+                        360: 'LD',
+                        240: 'LD',
+                    },
+                },
+            });
 
-            const p = new Plyr(videoEl, opts);
-
-            // Override download button → use our download pipeline
-            const container = p.elements.container;
-            const dlBtn = container && container.querySelector('[data-plyr="download"]');
-            if (dlBtn) {
-                dlBtn.addEventListener('click', e => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    if (!streamUrl) return alert('Önce bir ders seçin');
-                    download(streamUrl, titleEl.textContent || 'video');
-                });
-            }
-
-            return p;
-        }
-
-        // ==================== LESSONS ====================
-        async function loadLessons() {
-            if (!selectEl.value) return;
-            listEl.innerHTML = '<div class="empty-state"><p>Yükleniyor...</p></div>';
-
-            try {
-                const res = await fetch(selectEl.value);
-                lessons = await res.json();
-                activeIndex = -1;
-                renderLessons();
-            } catch {
-                listEl.innerHTML = '<div class="empty-state"><p>Ders bilgileri yüklenemedi!</p></div>';
-            }
-        }
-
-        function renderLessons() {
-            listEl.innerHTML = '';
-            lessons.forEach((lesson, i) => {
-                const el = document.createElement('div');
-                el.className = 'lesson-item' + (i === activeIndex ? ' active' : '');
-                el.innerHTML = `
-                    <span class="lesson-number">${i + 1}</span>
-                    <svg class="lesson-playing-icon" viewBox="0 0 24 24" fill="#3ea6ff"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
-                    <div class="lesson-details">
-                        <div class="lesson-title">${lesson.title}</div>
-                        <div class="lesson-meta">${lesson.instructor_name} · ${lesson.duration}</div>
-                    </div>
-                    <button class="lesson-download" title="İndir">
-                        <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
-                    </button>`;
-
-                // Play on click
-                el.addEventListener('click', () => playLesson(i));
-
-                // Download on button click
-                el.querySelector('.lesson-download').addEventListener('click', e => {
-                    e.stopPropagation();
-                    download(lesson.stream_url, lesson.title);
-                });
-
-                listEl.appendChild(el);
+            // Auto-play next video when current ends
+            state.player.on('ended', () => {
+                if (state.currentVideoIndex < state.videos.length - 1) {
+                    playVideo(state.currentVideoIndex + 1);
+                }
             });
         }
 
-        function playLesson(index) {
-            const lesson = lessons[index];
-            activeIndex = index;
-            streamUrl = lesson.stream_url;
-            titleEl.textContent = lesson.title;
-            metaEl.textContent = `${lesson.instructor_name} · ${lesson.duration}`;
-            loadStream(lesson.stream_url);
-            renderLessons();
+        function updateQuality(newQuality) {
+            if (state.hls) {
+                if (newQuality === 0) {
+                    // Auto quality
+                    state.hls.currentLevel = -1;
+                    document.getElementById('current-quality').textContent = 'Auto';
+                } else {
+                    state.hls.levels.forEach((level, levelIndex) => {
+                        if (level.height === newQuality) {
+                            state.hls.currentLevel = levelIndex;
+                        }
+                    });
+                    document.getElementById('current-quality').textContent = newQuality + 'p';
+                }
+            }
         }
 
-        // ==================== HLS ====================
+        // ====== Load HLS Stream ======
         function loadStream(url) {
-            // Clean up previous
-            if (hls) { hls.destroy(); hls = null; }
-            if (player) { player.destroy(); player = null; }
+            const video = document.getElementById('player');
 
-            // Get fresh video element ref (Plyr.destroy restores original)
-            const vid = document.getElementById('player');
+            // Destroy previous HLS instance
+            if (state.hls) {
+                state.hls.destroy();
+                state.hls = null;
+            }
 
-            if (!Hls.isSupported()) {
-                // Safari native HLS
-                vid.src = url;
-                player = createPlyr();
-                vid.addEventListener('loadedmetadata', () => vid.play().catch(() => {}), { once: true });
+            // Show player, hide welcome
+            document.getElementById('welcome-state').style.display = 'none';
+            video.style.display = 'block';
+            document.getElementById('video-info-bar').style.display = 'block';
+
+            if (Hls.isSupported()) {
+                const hls = new Hls({
+                    maxBufferLength: 30,
+                    maxMaxBufferLength: 60,
+                });
+                state.hls = hls;
+
+                hls.loadSource(url);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
+                    // Build quality options from HLS levels
+                    const availableQualities = hls.levels.map(l => l.height);
+                    availableQualities.unshift(0); // Add "Auto" option (0)
+
+                    // Update Plyr quality options
+                    state.player.quality = -1; // Reset
+
+                    // Reinitialize quality menu
+                    state.qualityOptions = availableQualities;
+
+                    // Rebuild Plyr with quality options
+                    state.player.config.quality = {
+                        default: 0,
+                        options: availableQualities,
+                        forced: true,
+                        onChange: (quality) => updateQuality(quality),
+                    };
+
+                    // Hack: trigger Plyr to re-render quality menu
+                    // We need to destroy and reinit Plyr with quality settings
+                    rebuildPlayerWithQualities(availableQualities);
+
+                    // Start playback
+                    video.play().catch(() => { });
+
+                    // Update quality badge
+                    document.getElementById('current-quality').textContent = 'Auto';
+                });
+
+                hls.on(Hls.Events.LEVEL_SWITCHED, (event, data) => {
+                    const level = hls.levels[data.level];
+                    if (level) {
+                        const qualityText = hls.autoLevelEnabled
+                            ? `Auto (${level.height}p)`
+                            : `${level.height}p`;
+                        document.getElementById('current-quality').textContent = qualityText;
+                    }
+                });
+
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                                hls.startLoad();
+                                break;
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                hls.recoverMediaError();
+                                break;
+                            default:
+                                hls.destroy();
+                                break;
+                        }
+                    }
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Native HLS support (Safari)
+                video.src = url;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play().catch(() => { });
+                });
+            }
+        }
+
+        function rebuildPlayerWithQualities(qualities) {
+            const video = document.getElementById('player');
+
+            // Store current time and playing state
+            const currentTime = video.currentTime || 0;
+            const wasPlaying = !video.paused;
+
+            if (state.player) {
+                state.player.destroy();
+            }
+
+            state.player = new Plyr(video, {
+                controls: [
+                    'play-large', 'rewind', 'play', 'fast-forward',
+                    'progress', 'current-time', 'duration', 'mute',
+                    'volume', 'settings', 'pip', 'airplay', 'fullscreen'
+                ],
+                settings: ['quality', 'speed'],
+                quality: {
+                    default: 0,
+                    options: qualities,
+                    forced: true,
+                    onChange: (quality) => updateQuality(quality),
+                },
+                speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 2] },
+                keyboard: { focused: true, global: true },
+                tooltips: { controls: true, seek: true },
+                i18n: {
+                    quality: 'Kalite',
+                    speed: 'Hız',
+                    normal: 'Normal',
+                    settings: 'Ayarlar',
+                    menuBack: 'Geri',
+                    qualityBadge: {
+                        2160: '4K',
+                        1440: 'QHD',
+                        1080: 'FHD',
+                        720: 'HD',
+                        576: 'SD',
+                        480: 'SD',
+                        360: 'LD',
+                        240: 'LD',
+                        0: 'Auto',
+                    },
+                },
+            });
+
+            // Re-attach ended event
+            state.player.on('ended', () => {
+                if (state.currentVideoIndex < state.videos.length - 1) {
+                    playVideo(state.currentVideoIndex + 1);
+                }
+            });
+
+            // Restore time
+            if (currentTime > 0) {
+                video.currentTime = currentTime;
+            }
+            if (wasPlaying) {
+                video.play().catch(() => { });
+            }
+        }
+
+        // ====== Load Instructors ======
+        async function loadInstructors() {
+            const instructorMap = new Map();
+            let totalVideoCount = 0;
+
+            // Load counts from each JSON
+            const promises = JSON_FILES.map(async (fileName) => {
+                try {
+                    const resp = await fetch(fileName);
+                    const data = await resp.json();
+                    const displayName = data.length > 0 && data[0].instructor_name
+                        ? data[0].instructor_name
+                        : formatInstructorName(fileName);
+                    instructorMap.set(fileName, {
+                        name: displayName,
+                        fileName: fileName,
+                        videoCount: data.length
+                    });
+                    totalVideoCount += data.length;
+                } catch (e) {
+                    // Skip invalid files
+                }
+            });
+
+            await Promise.all(promises);
+
+            // Sort alphabetically
+            state.instructors = Array.from(instructorMap.values())
+                .sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+
+            // Update stats
+            document.getElementById('total-instructors').textContent = state.instructors.length;
+            document.getElementById('total-videos').textContent = totalVideoCount;
+
+            renderInstructorList();
+            renderMobileDropdown();
+        }
+
+        // ====== Render Instructor List ======
+        function renderInstructorList(filter = '') {
+            const container = document.getElementById('instructor-list');
+            const filtered = state.instructors.filter(i =>
+                i.name.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            container.innerHTML = filtered.map((instructor, idx) => `
+                <div class="instructor-item fade-in ${state.currentInstructor === instructor.fileName ? 'active' : ''}"
+                     data-file="${instructor.fileName}"
+                     onclick="selectInstructor('${instructor.fileName}')"
+                     style="animation-delay: ${idx * 20}ms">
+                    <div class="instructor-avatar" style="background: ${getAvatarColor(instructor.name)}">
+                        ${getInitials(instructor.name)}
+                    </div>
+                    <div class="instructor-info">
+                        <div class="instructor-name">${instructor.name}</div>
+                        <div class="instructor-count">${instructor.videoCount} video</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ====== Mobile Dropdown ======
+        function renderMobileDropdown() {
+            const dropdown = document.getElementById('mobile-instructor-dropdown');
+            dropdown.innerHTML = '<option value="">Eğitmen seçin...</option>' +
+                state.instructors.map(i =>
+                    `<option value="${i.fileName}">${i.name} (${i.videoCount})</option>`
+                ).join('');
+        }
+
+        // ====== Select Instructor ======
+        async function selectInstructor(fileName) {
+            state.currentInstructor = fileName;
+            state.currentVideoIndex = -1;
+
+            // Update active state in sidebar
+            document.querySelectorAll('.instructor-item').forEach(el => {
+                el.classList.toggle('active', el.dataset.file === fileName);
+            });
+
+            // Update mobile dropdown
+            document.getElementById('mobile-instructor-dropdown').value = fileName;
+
+            // Load videos
+            try {
+                const resp = await fetch(fileName);
+                state.videos = await resp.json();
+            } catch (e) {
+                state.videos = [];
+            }
+
+            // Update playlist
+            const instructor = state.instructors.find(i => i.fileName === fileName);
+            document.getElementById('playlist-title').textContent = instructor ? instructor.name : 'Video Listesi';
+            document.getElementById('playlist-count').textContent = state.videos.length;
+
+            renderPlaylist();
+
+            // Auto-play first video
+            if (state.videos.length > 0) {
+                playVideo(0);
+            }
+        }
+
+        // ====== Render Playlist ======
+        function renderPlaylist(filter = '') {
+            const container = document.getElementById('playlist-items');
+            const filtered = state.videos
+                .map((v, i) => ({ ...v, originalIndex: i }))
+                .filter(v => v.title.toLowerCase().includes(filter.toLowerCase()));
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-playlist">
+                        <div class="empty-icon">🔍</div>
+                        <p>${filter ? 'Sonuç bulunamadı' : 'Video bulunamadı'}</p>
+                    </div>`;
                 return;
             }
 
-            hls = new Hls({ maxBufferLength: 30, maxMaxBufferLength: 60 });
-            hls.loadSource(url);
-
-            hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                // Extract quality levels
-                const heights = [...new Set(hls.levels.map(l => l.height))].sort((a, b) => b - a);
-
-                player = createPlyr({
-                    default: heights[0],
-                    options: heights,
-                    forced: true,
-                    onChange: q => {
-                        const idx = hls.levels.findIndex(l => l.height === q);
-                        if (idx !== -1) hls.currentLevel = idx;
-                    }
-                });
-
-                vid.play().catch(() => {});
-            });
-
-            hls.on(Hls.Events.ERROR, (_, data) => {
-                if (!data.fatal) return;
-                if (data.type === Hls.ErrorTypes.NETWORK_ERROR) hls.startLoad();
-                else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError();
-                else hls.destroy();
-            });
-
-            hls.attachMedia(vid);
+            container.innerHTML = filtered.map((video, displayIdx) => `
+                <div class="playlist-item fade-in ${video.originalIndex === state.currentVideoIndex ? 'active' : ''}"
+                     onclick="playVideo(${video.originalIndex})"
+                     style="animation-delay: ${displayIdx * 15}ms">
+                    <div class="playlist-item-index">
+                        <span class="idx-num">${video.originalIndex + 1}</span>
+                    </div>
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">${video.title}</div>
+                        <div class="playlist-item-duration">
+                            <span>⏱</span> ${video.duration}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
         }
 
-        // ==================== DOWNLOAD ====================
-        let downloading = false;
-        let abortCtrl = null;
+        // ====== Play Video ======
+        function playVideo(index) {
+            if (index < 0 || index >= state.videos.length) return;
 
-        const dlOverlay = document.getElementById('dlOverlay');
-        const dlTitle = document.getElementById('dlTitle');
-        const dlBar = document.getElementById('dlBar');
-        const dlStatus = document.getElementById('dlStatus');
-        const dlCancel = document.getElementById('dlCancel');
+            state.currentVideoIndex = index;
+            const video = state.videos[index];
 
-        dlCancel.addEventListener('click', () => {
-            if (abortCtrl) abortCtrl.abort();
-            hideModal();
+            // Update info bar
+            document.getElementById('current-video-title').textContent = video.title;
+            document.getElementById('current-instructor').textContent = video.instructor_name;
+            document.getElementById('current-duration').textContent = video.duration;
+
+            // Load the stream
+            loadStream(video.stream_url);
+
+            // Update active states in playlist
+            document.querySelectorAll('.playlist-item').forEach((el, i) => {
+                // We need to check by onclick content match
+                el.classList.remove('active');
+            });
+            renderPlaylist(document.getElementById('playlist-search').value);
+
+            // Scroll active item into view
+            setTimeout(() => {
+                const activeItem = document.querySelector('.playlist-item.active');
+                if (activeItem) {
+                    activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }, 100);
+        }
+
+        // ====== Event Listeners ======
+        document.getElementById('instructor-search').addEventListener('input', (e) => {
+            renderInstructorList(e.target.value);
         });
 
-        function showModal(title) {
-            dlTitle.textContent = title;
-            dlBar.style.width = '0%';
-            dlStatus.textContent = 'Hazırlanıyor...';
-            dlOverlay.classList.add('show');
-        }
+        document.getElementById('playlist-search').addEventListener('input', (e) => {
+            renderPlaylist(e.target.value);
+        });
 
-        function hideModal() {
-            dlOverlay.classList.remove('show');
-        }
-
-        function setProgress(pct, text) {
-            dlBar.style.width = pct + '%';
-            if (text) dlStatus.textContent = text;
-        }
-
-        async function download(masterUrl, title) {
-            if (downloading) return;
-            downloading = true;
-            abortCtrl = new AbortController();
-            const signal = abortCtrl.signal;
-
-            showModal(title);
-
-            try {
-                // 1. Fetch master playlist
-                setProgress(0, 'Çalma listesi çözümleniyor...');
-                const baseUrl = masterUrl.substring(0, masterUrl.lastIndexOf('/') + 1);
-                const masterText = await (await fetch(masterUrl, { signal })).text();
-
-                // 2. Pick highest quality chunklist
-                const lines = masterText.split('\n');
-                const streams = [];
-                lines.forEach((line, i) => {
-                    if (line.includes('RESOLUTION=')) {
-                        const h = parseInt(line.match(/RESOLUTION=\d+x(\d+)/)[1]);
-                        streams.push({ height: h, chunk: lines[i + 1].trim() });
-                    }
-                });
-
-                let chunkPath;
-                if (streams.length > 0) {
-                    streams.sort((a, b) => b.height - a.height);
-                    chunkPath = streams[0].chunk;
-                    setProgress(5, `En yüksek kalite: ${streams[0].height}p`);
-                } else {
-                    chunkPath = masterUrl.substring(masterUrl.lastIndexOf('/') + 1);
-                }
-
-                // 3. Fetch chunklist
-                const chunkUrl = baseUrl + chunkPath;
-                const chunkBase = chunkUrl.substring(0, chunkUrl.lastIndexOf('/') + 1);
-                const chunkText = await (await fetch(chunkUrl, { signal })).text();
-
-                const segments = chunkText.split('\n')
-                    .map(l => l.trim())
-                    .filter(l => l && !l.startsWith('#'));
-
-                if (!segments.length) throw new Error('Segment bulunamadı');
-
-                // 4. Download all segments in parallel
-                const total = segments.length;
-                const data = new Array(total);
-                let done = 0;
-                const WORKERS = 5;
-
-                const queue = segments.map((_, i) => i);
-
-                async function worker() {
-                    while (queue.length) {
-                        if (signal.aborted) return;
-                        const i = queue.shift();
-                        const url = segments[i].startsWith('http') ? segments[i] : chunkBase + segments[i];
-
-                        for (let attempt = 0; attempt < 3; attempt++) {
-                            try {
-                                const res = await fetch(url, { signal });
-                                if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                                data[i] = new Uint8Array(await res.arrayBuffer());
-                                break;
-                            } catch (err) {
-                                if (err.name === 'AbortError') throw err;
-                                if (attempt === 2) throw err;
-                                await new Promise(r => setTimeout(r, 1000));
-                            }
-                        }
-
-                        done++;
-                        const pct = 10 + Math.round((done / total) * 85);
-                        setProgress(pct, `İndiriliyor: ${done}/${total} (%${Math.round(done / total * 100)})`);
-                    }
-                }
-
-                await Promise.all(Array.from({ length: WORKERS }, worker));
-                if (signal.aborted) return;
-
-                // 5. Concatenate & save
-                setProgress(96, 'Dosya oluşturuluyor...');
-
-                let size = 0;
-                for (const d of data) size += d.length;
-
-                const merged = new Uint8Array(size);
-                let offset = 0;
-                for (let i = 0; i < data.length; i++) {
-                    merged.set(data[i], offset);
-                    offset += data[i].length;
-                    data[i] = null; // free memory
-                }
-
-                const blob = new Blob([merged.buffer], { type: 'video/mp2t' });
-                const a = document.createElement('a');
-                a.href = URL.createObjectURL(blob);
-                a.download = title.replace(/[^a-zA-Z0-9\s\-_öüşçğıÖÜŞÇĞİ]/g, '').trim() + '.ts';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(a.href);
-
-                setProgress(100, 'İndirme tamamlandı!');
-                setTimeout(hideModal, 1500);
-
-            } catch (err) {
-                if (err.name === 'AbortError') {
-                    dlStatus.textContent = 'İptal edildi.';
-                } else {
-                    console.error('Download error:', err);
-                    dlStatus.textContent = `Hata: ${err.message}`;
-                }
-                setTimeout(hideModal, 2500);
-            } finally {
-                downloading = false;
-                abortCtrl = null;
+        document.getElementById('mobile-instructor-dropdown').addEventListener('change', (e) => {
+            if (e.target.value) {
+                selectInstructor(e.target.value);
             }
-        }
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+
+            switch (e.key) {
+                case 'n':
+                case 'N':
+                    // Next video
+                    if (state.currentVideoIndex < state.videos.length - 1) {
+                        playVideo(state.currentVideoIndex + 1);
+                    }
+                    break;
+                case 'p':
+                case 'P':
+                    // Previous video
+                    if (state.currentVideoIndex > 0) {
+                        playVideo(state.currentVideoIndex - 1);
+                    }
+                    break;
+            }
+        });
+
+        // ====== Init ======
+        initPlayer();
+        loadInstructors();
     </script>
 </body>
 
